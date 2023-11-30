@@ -10,11 +10,11 @@ export const ANIMATION_WORDS: AnimationWordsInterface[] = [
     color: 'from-[#a8ff78] to-[#78ffd6]',
   },
   {
-    word: 'Software Engineer',
+    word: 'Code',
     color: 'from-[#348F50] to-[#56B4D3]',
   },
   {
-    word: 'Rifqi Farel Muhamad',
+    word: 'Software Engineer',
     color: 'from-[#ff9966] to-[#ff5e62]',
   },
 ]
