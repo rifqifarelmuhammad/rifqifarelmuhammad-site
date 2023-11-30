@@ -12,19 +12,17 @@ export const NavLink: React.FC<NavLinkProps> = ({
   return (
     <Link
       href={url}
-      className={`py-2 md:text-center text-white font-bold rounded-full group ${
+      className={`py-2 md:text-center ${
+        url === currentLocation ? 'text-[#FFF500]' : 'text-white'
+      } font-semibold rounded-full group ${
         width < 768 &&
-        `px-4 duration-300 transition-all ease-in-out hover:bg-[#ffffff]/[0.1] hover:ml-1 ${
-          url === currentLocation ? 'bg-[#ffffff]/[0.1]' : ''
-        }`
+        `px-4 duration-300 transition-all ease-in-out hover:bg-[#ffffff]/[0.1] hover:ml-1`
       }`}
     >
       {label}
       {width >= 768 && (
         <hr
-          className={`group-hover:h-[2px] group-hover:bg-white border-none duration-150 transition-all ease-in-out ${
-            url === currentLocation ? 'h-[2px] bg-white' : ''
-          }`}
+          className={`group-hover:h-[2px] group-hover:bg-white border-none duration-300 transition-all ease-in-out`}
         />
       )}
     </Link>

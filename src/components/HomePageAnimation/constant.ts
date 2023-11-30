@@ -2,19 +2,19 @@ import { AnimationWordsInterface } from './interface'
 
 export const ANIMATION_WORDS: AnimationWordsInterface[] = [
   {
-    word: 'Indonesia',
-    color: 'from-[#D31027] to-[#FFFFFF]',
+    word: 'Jakarta',
+    color: 'from-[#FFDD00] to-[#0B4CCB]',
   },
   {
     word: 'Computer Science',
-    color: 'from-[#a8ff78] to-[#78ffd6]',
+    color: 'from-[#2F2BFF] to-[#FF0000]',
   },
   {
     word: 'Code',
-    color: 'from-[#348F50] to-[#56B4D3]',
+    color: 'from-[#60D9FF] to-[#5A950E]',
   },
   {
     word: 'Software Engineer',
-    color: 'from-[#ff9966] to-[#ff5e62]',
+    color: 'from-[#14B01A] to-[#ff9966]',
   },
 ]

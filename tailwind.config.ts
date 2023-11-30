@@ -12,9 +12,6 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
-      },
       keyframes: {
         'scroll-up': {
           '25%': { transform: 'translateY(-25%)' },
