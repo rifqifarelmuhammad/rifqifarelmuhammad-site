@@ -2,8 +2,8 @@ import { HomePageAnimation } from '@components'
 
 export default function Home() {
   return (
-    <div className='w-full'>
-      <div className='align-middle'>
+    <div className="w-full">
+      <div className="align-middle">
         <HomePageAnimation />
       </div>
     </div>

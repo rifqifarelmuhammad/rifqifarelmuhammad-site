@@ -1,16 +1,16 @@
-import { MenuInterface } from "./interface";
+import { MenuInterface } from './interface'
 
 export const MENUS: MenuInterface[] = [
-    {
-        label: 'Home',
-        url: '/'
-    },
-    {
-        label: 'Projects',
-        url: '/projects'
-    },
-    {
-        label: 'About',
-        url: '/about'
-    }
+  {
+    label: 'Home',
+    url: '/',
+  },
+  {
+    label: 'Projects',
+    url: '/projects',
+  },
+  {
+    label: 'About',
+    url: '/about',
+  },
 ]

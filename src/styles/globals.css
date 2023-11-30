@@ -13,8 +13,8 @@ body {
   font-family: 'Inter', sans-serif;
   font-feature-settings: 'cv11';
 }
-  
+
 body::-webkit-scrollbar {
-  background-color: #0B1726;
+  background-color: #0b1726;
   width: 0.75em;
 }

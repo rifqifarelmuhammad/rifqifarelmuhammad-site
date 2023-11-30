@@ -20,12 +20,12 @@ const config: Config = {
           '25%': { transform: 'translateY(-25%)' },
           '50%': { transform: 'translateY(-50%)' },
           '75%': { transform: 'translateY(-75%)' },
-        }
+        },
       },
       animation: {
         // 'scroll-up': 'scroll-up 4s forwards'
-        'scroll-up': 'scroll-up 4s infinite'
-      }
+        'scroll-up': 'scroll-up 4s infinite',
+      },
     },
   },
   plugins: [],
