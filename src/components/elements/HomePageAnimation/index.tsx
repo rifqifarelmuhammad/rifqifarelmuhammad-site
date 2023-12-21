@@ -5,11 +5,11 @@ export const HomePageAnimation = () => (
     <div className="overflow-hidden h-20">
       <div className="animate-scroll-up">
         {ANIMATION_WORDS.map((word) => (
-          <p
+          <h2
             className={`text-[56px] font-bold text-center text-transparent bg-clip-text bg-gradient-to-br ${word.color}`}
           >
             {word.word}
-          </p>
+          </h2>
         ))}
       </div>
     </div>

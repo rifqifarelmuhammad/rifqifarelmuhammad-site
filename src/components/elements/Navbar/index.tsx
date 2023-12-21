@@ -14,7 +14,7 @@ export const Navbar = () => {
   const handleNavCollapse = () => setIsCollapsed(!isCollapsed)
 
   return (
-    <nav className="fixed z-50 w-full flex flex-col md:items-center justify-center shadow-lg bg-[#101F33]">
+    <nav className="sticky inset-0 z-50 w-full flex flex-col md:items-center justify-center shadow-lg bg-[#101F33]">
       <div className="flex items-center py-3 px-7 md:px-12 lg:px-16 xl:px-20 justify-between w-full">
         <Link href={'/'}>
           <Image

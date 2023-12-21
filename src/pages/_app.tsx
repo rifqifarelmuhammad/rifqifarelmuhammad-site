@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import { Header, Navbar } from '@components'
+import { Header, Navbar } from '@elements'
 import type { AppProps } from 'next/app'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/router'

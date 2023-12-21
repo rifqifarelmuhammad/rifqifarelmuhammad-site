@@ -1,3 +1,3 @@
-export * from './Navbar'
-export * from './HomePageAnimation'
-export * from './Header'
+export * from './elements'
+export * from './icons'
+export * from './modules'
