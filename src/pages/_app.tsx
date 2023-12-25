@@ -1,8 +1,9 @@
 import '../styles/globals.css'
-import { Header, Navbar } from '@elements'
+import { Footer, Header, Navbar } from '@elements'
 import type { AppProps } from 'next/app'
 import { AnimatePresence, motion } from 'framer-motion'
 import { useRouter } from 'next/router'
+import { Toaster } from 'react-hot-toast'
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -20,6 +21,8 @@ export default function App({ Component, pageProps }: AppProps) {
           </main>
         </motion.div>
       </AnimatePresence>
+      <Toaster />
+      <Footer />
     </>
   )
 }
