@@ -1,1 +1,2 @@
-export * from './HomePage'
+export * from './HomeModule'
+export * from './ProjectsModule'
