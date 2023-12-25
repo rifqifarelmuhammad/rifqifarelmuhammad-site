@@ -9,8 +9,4 @@ export const MENUS: MenuInterface[] = [
     label: 'Projects',
     url: '/projects',
   },
-  {
-    label: 'About',
-    url: '/about',
-  },
 ]

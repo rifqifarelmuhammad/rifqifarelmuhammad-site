@@ -1,9 +1,8 @@
 import Link from 'next/link'
-import { getContacts } from './constant'
+import { CONTACTS } from './constant'
 import toast from 'react-hot-toast'
 
 export const Footer = () => {
-  const CONTACTS = getContacts()
   const MAIL = CONTACTS[0]
 
   const handleMailButton = () => {
