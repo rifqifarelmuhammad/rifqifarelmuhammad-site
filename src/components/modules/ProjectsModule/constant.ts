@@ -47,7 +47,16 @@ export const PROJECTS: ProjectCardProps[] = [
     description:
       'Social media platforms, such as Twitter, are used by travelers to share suggestions and reviews about tourist destinations. Additionally, agents\
       can manage their businesses on Worldie. Developed using Unified Process Model.',
-    techStacks: [Nest, Typescript, Postgresql, Next, Tailwind, Cloudinary, Docker, Gcp],
+    techStacks: [
+      Nest,
+      Typescript,
+      Postgresql,
+      Next,
+      Tailwind,
+      Cloudinary,
+      Docker,
+      Gcp,
+    ],
     webProps: {
       logoUrl: '/icons/worldie.png',
       webUrl: 'https://worldie-atw.vercel.app/',
