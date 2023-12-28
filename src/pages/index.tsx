@@ -8,7 +8,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setAnimation(false)
-    }, 3000)
+    }, 2950)
   }, [])
 
   return (
