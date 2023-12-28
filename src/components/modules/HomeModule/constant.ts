@@ -48,7 +48,7 @@ import {
   Typescript,
   TypescriptColorless,
 } from '@icons'
-import { LogoProps } from './interface'
+import { LogoProps, TechStackProps } from './interface'
 
 export const LANGUAGES: LogoProps[] = [
   {
@@ -152,5 +152,20 @@ export const TOOLS: LogoProps[] = [
   {
     Logo: Grafana,
     LogoColorless: GrafanaColorless,
+  },
+]
+
+export const TECH_STACK: TechStackProps[] = [
+  {
+    title: 'Languages',
+    LOGOS: LANGUAGES,
+  },
+  {
+    title: 'Frameworks',
+    LOGOS: FRAMEWORKS,
+  },
+  {
+    title: 'Tools',
+    LOGOS: TOOLS,
   },
 ]

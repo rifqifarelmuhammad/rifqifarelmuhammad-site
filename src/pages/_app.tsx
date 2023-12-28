@@ -15,9 +15,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <AnimatePresence mode="wait">
         <motion.div>
           <main className="w-full min-h-screen bg-[#0B1726]">
-            <section className="max-w-[1440px] flex mx-auto">
-              <Component {...pageProps} key={router.pathname} />
-            </section>
+            <Component {...pageProps} key={router.pathname} />
           </main>
         </motion.div>
       </AnimatePresence>

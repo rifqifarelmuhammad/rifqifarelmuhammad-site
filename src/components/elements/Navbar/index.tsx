@@ -33,7 +33,7 @@ export const Navbar = () => {
           ))}
         </div>
 
-        <button className="flex lg:hidden" onClick={handleNavCollapse}>
+        <button className="flex md:hidden" onClick={handleNavCollapse}>
           <Bars3Icon className="w-6 text-white" />
         </button>
       </div>

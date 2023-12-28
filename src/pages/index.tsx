@@ -21,7 +21,7 @@ export default function Home() {
           <>
             <motion.div
               animate={{ scale: [0, 0.25, 0.5, 0.75, 1] }}
-              transition={{ times: 0.5 }}
+              transition={{ times: 1 }}
             >
               <HomeModule />
             </motion.div>

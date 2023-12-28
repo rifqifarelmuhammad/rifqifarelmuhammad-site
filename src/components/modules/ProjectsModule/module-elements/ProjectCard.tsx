@@ -13,26 +13,30 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   githubUrl,
 }) => {
   return (
-    <div className="w-full bg-[#ffffff]/[0.1] rounded-lg shadow-xl">
-      <div className="relative w-full aspect-[3/1] overflow-hidden rounded-lg">
+    <div className="w-full bg-[#ffffff]/[0.1] rounded-lg shadow-lg lg:shadow-xl relative">
+      <div className="relative w-full aspect-[7/3] md:aspect-[3/1] lg:aspect-[5/2] xl:aspect-[3/1] overflow-hidden rounded-lg">
         <Image alt={title} src={getImage(imageUrl)} layout="fill" />
       </div>
-      <div className="flex flex-col gap-4 px-4 py-2 pb-4">
+      <div className="flex flex-col gap-3 md:gap-4 px-3 py-2">
         <div className="flex flex-col gap-1">
-          <h3 className="text-white font-semibold text-2xl">{title}</h3>
-          <p className="text-white text-lg">{description}</p>
+          <h3 className="text-white font-semibold text-lg md:text-xl lg:text-2xl">
+            {title}
+          </h3>
+          <p className="text-white text-sm md:text-base lg:text-lg">
+            {description}
+          </p>
         </div>
 
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap gap-3 lg:gap-4 pb-12 md:pb-[60px] lg:pb-16">
           {techStacks.map((Icon) => (
-            <Icon className="w-9 h-9" />
+            <Icon className="w-7 md:w-8 lg:w-9 h-7 md:h-8 lg:h-9" />
           ))}
         </div>
 
-        <div className="flex flex-row gap-3">
+        <div className="flex flex-row gap-3 lg:gap-4 absolute bottom-3 items-center">
           {webProps && (
             <Link href={webProps.webUrl} target="_blank">
-              <div className="relative w-10 h-10">
+              <div className="relative w-7 md:w-8 lg:w-9 h-7 md:h-8 lg:h-9">
                 <Image
                   src={webProps.logoUrl}
                   alt={webProps.webUrl}
@@ -46,7 +50,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             </Link>
           )}
           <Link href={githubUrl} target="_blank">
-            <GrGithub className="text-white w-8 h-8" />
+            <GrGithub className="text-white w-7 md:w-8 lg:w-9 h-7 md:h-8 lg:h-9" />
           </Link>
         </div>
       </div>

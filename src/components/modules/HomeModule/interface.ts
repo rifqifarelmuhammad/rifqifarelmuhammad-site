@@ -5,3 +5,8 @@ export interface LogoProps {
   Logo: FC<IconProps>
   LogoColorless: FC<IconProps>
 }
+
+export interface TechStackProps {
+  title: string
+  LOGOS: LogoProps[]
+}
