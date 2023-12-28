@@ -28,10 +28,6 @@ export const Footer = () => {
             )
           )}
         </div>
-
-        <p className="text-center text-[#ffffff]/[0.75] text-lg">
-          © 2023 Rifqi Farel Muhammad - All Rights Reserved
-        </p>
       </div>
     </div>
   )
