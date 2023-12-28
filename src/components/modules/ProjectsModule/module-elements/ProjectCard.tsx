@@ -17,7 +17,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
       <div className="relative w-full aspect-[7/3] md:aspect-[3/1] lg:aspect-[5/2] xl:aspect-[3/1] overflow-hidden rounded-lg">
         <Image alt={title} src={getImage(imageUrl)} layout="fill" />
       </div>
-      <div className="flex flex-col gap-3 md:gap-4 px-3 py-2">
+      <div className="flex flex-col gap-3 md:gap-4 px-3 md:px-4 py-2">
         <div className="flex flex-col gap-1">
           <h3 className="text-white font-semibold text-lg md:text-xl lg:text-2xl">
             {title}
@@ -33,7 +33,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           ))}
         </div>
 
-        <div className="flex flex-row gap-3 lg:gap-4 absolute bottom-3">
+        <div className="flex flex-row gap-3 lg:gap-4 absolute bottom-3 md:bottom-4">
           {webProps && (
             <Link href={webProps.webUrl} target="_blank">
               <div className="relative w-7 md:w-8 lg:w-9 h-7 md:h-8 lg:h-9">
