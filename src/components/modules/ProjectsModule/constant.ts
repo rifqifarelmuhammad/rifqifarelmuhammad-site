@@ -1,4 +1,5 @@
 import {
+  Cloudinary,
   Docker,
   Gcp,
   Golang,
@@ -20,7 +21,7 @@ export const PROJECTS: ProjectCardProps[] = [
     imageUrl: 'v1703755830/personal-website_tya35z.png',
     description:
       'The place where I put my information, such as skills, projects, and contacts.',
-    techStacks: [Next, Typescript, Tailwind],
+    techStacks: [Next, Typescript, Tailwind, Cloudinary],
     webProps: {
       logoUrl: '/icons/favicon.ico',
       webUrl: 'https://rifqifarelmuhammad.vercel.app/',
@@ -46,7 +47,7 @@ export const PROJECTS: ProjectCardProps[] = [
     description:
       'Social media platforms, such as Twitter, are used by travelers to share suggestions and reviews about tourist destinations. Additionally, agents\
       can manage their businesses on Worldie. Developed using Unified Process Model.',
-    techStacks: [Nest, Typescript, Postgresql, Next, Tailwind, Docker, Gcp],
+    techStacks: [Nest, Typescript, Postgresql, Next, Tailwind, Cloudinary, Docker, Gcp],
     webProps: {
       logoUrl: '/icons/worldie.png',
       webUrl: 'https://worldie-atw.vercel.app/',

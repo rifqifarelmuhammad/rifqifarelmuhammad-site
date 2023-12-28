@@ -33,7 +33,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           ))}
         </div>
 
-        <div className="flex flex-row gap-3 lg:gap-4 absolute bottom-3 items-center">
+        <div className="flex flex-row gap-3 lg:gap-4 absolute bottom-3">
           {webProps && (
             <Link href={webProps.webUrl} target="_blank">
               <div className="relative w-7 md:w-8 lg:w-9 h-7 md:h-8 lg:h-9">

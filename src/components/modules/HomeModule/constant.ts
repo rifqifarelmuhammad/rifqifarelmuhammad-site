@@ -1,6 +1,8 @@
 import {
   Aws,
   AwsColorless,
+  Cloudinary,
+  CloudinaryColorless,
   Css,
   CssColorless,
   Dart,
@@ -140,6 +142,10 @@ export const TOOLS: LogoProps[] = [
   {
     Logo: Aws,
     LogoColorless: AwsColorless,
+  },
+  {
+    Logo: Cloudinary,
+    LogoColorless: CloudinaryColorless,
   },
   {
     Logo: Firebase,
