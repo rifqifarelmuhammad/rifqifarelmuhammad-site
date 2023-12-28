@@ -32,7 +32,7 @@ export const PROJECTS: ProjectCardProps[] = [
     title: 'Warecloud',
     imageUrl: 'v1703596001/warecloud_xhravc.png',
     description:
-      'An application that allows a warehouse to integrate its branches so that each branch can request and send items to each other, enabling fast and\
+      'Warecloud is an application that allows a warehouse to integrate its branches so that each branch can request and send items to each other, enabling fast and\
       efficient supply chain connectivity. Additionally, customers can order items online on Warecloud.',
     techStacks: [Nest, Typescript, Postgresql, Next, Tailwind, Docker, Gcp],
     webProps: {
@@ -45,8 +45,8 @@ export const PROJECTS: ProjectCardProps[] = [
     title: 'Worldie',
     imageUrl: 'v1703595536/worldie_iwnrvs.png',
     description:
-      'Social media platforms, such as Twitter, are used by travelers to share suggestions and reviews about tourist destinations. Additionally, agents\
-      can manage their businesses on Worldie. Developed using Unified Process Model.',
+      'Worldie is a social media platform that is used by travelers to share suggestions and reviews about tourist destinations. Agents can manage their businesses\
+      on Worldie. Worldie was developed using Unified Process Model.',
     techStacks: [
       Nest,
       Typescript,
