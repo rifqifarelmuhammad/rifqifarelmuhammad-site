@@ -17,9 +17,9 @@ import { ProjectCardProps } from './interface'
 export const PROJECTS: ProjectCardProps[] = [
   {
     title: 'Personal Website',
-    imageUrl: 'v1703529675/socket-programming_bqzibr.png',
+    imageUrl: 'v1703755830/personal-website_tya35z.png',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+      'The place where I put my information, such as skills, projects, and contacts.',
     techStacks: [Next, Typescript, Tailwind],
     webProps: {
       logoUrl: '/icons/favicon.ico',
@@ -31,7 +31,8 @@ export const PROJECTS: ProjectCardProps[] = [
     title: 'Warecloud',
     imageUrl: 'v1703596001/warecloud_xhravc.png',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+      'An application that allows a warehouse to integrate its branches so that each branch can request and send items to each other, enabling fast and\
+      efficient supply chain connectivity. Additionally, customers can order items online on Warecloud.',
     techStacks: [Nest, Typescript, Postgresql, Next, Tailwind, Docker, Gcp],
     webProps: {
       logoUrl: '/icons/warecloud.ico',
@@ -43,7 +44,8 @@ export const PROJECTS: ProjectCardProps[] = [
     title: 'Worldie',
     imageUrl: 'v1703595536/worldie_iwnrvs.png',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+      'Social media platforms, such as Twitter, are used by travelers to share suggestions and reviews about tourist destinations. Additionally, agents\
+      can manage their businesses on Worldie. Developed using Unified Process Model.',
     techStacks: [Nest, Typescript, Postgresql, Next, Tailwind, Docker, Gcp],
     webProps: {
       logoUrl: '/icons/worldie.png',
@@ -55,7 +57,7 @@ export const PROJECTS: ProjectCardProps[] = [
     title: 'Atmos Game',
     imageUrl: 'v1703602048/atmos_mushl9.png',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+      'Atmos aims to create programs that can help users find applications & games they like, as well as help developers publish their applications.',
     techStacks: [
       Spring,
       Java,
@@ -74,7 +76,7 @@ export const PROJECTS: ProjectCardProps[] = [
     title: 'Socket Programming',
     imageUrl: 'v1703529675/socket-programming_bqzibr.png',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+      'A simple API with server socket written from scratch in Golang.',
     techStacks: [Golang],
     githubUrl: 'https://github.com/rifqifarelmuhammad/socket-programming',
   },

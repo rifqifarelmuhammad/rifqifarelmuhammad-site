@@ -6,16 +6,7 @@ export const HeyThere = () => (
     </h3>
 
     <h1 className="text-white text-xl">
-      I am Rifqi Farel Muhammad, a Computer Science student at University of
-      Indonesia. Lorem Ipsum is simply dummy text of the printing and
-      typesetting industry. Lorem Ipsum has been the industry's standard dummy
-      text ever since the 1500s, when an unknown printer took a galley of type
-      and scrambled it to make a type specimen book. It has survived not only
-      five centuries, but also the leap into electronic typesetting, remaining
-      essentially unchanged. It was popularised in the 1960s with the release of
-      Letraset sheets containing Lorem Ipsum passages, and more recently with
-      desktop publishing software like Aldus PageMaker including versions of
-      Lorem Ipsum.
+    I&rsquo;m Rifqi Farel Muhammad, a Computer Science student at University of Indonesia. I have a strong passion for software engineering, particularly in web development. I always push myself to improve my skills and learn new technologies. I have experience in Java, TypeScript, JavaScript, Python, Dart, and Golang, with a strong understanding of object-oriented programming. I have also implemented RESTful APIs, built interactive and responsive websites, built microservices architectures, and optimized the performance of the systems. I have worked on several projects, both on the backend and frontend. Creating high-quality products with efficient solutions and exceptional user experiences is what truly brings me fulfillment.
     </h1>
   </div>
 )
