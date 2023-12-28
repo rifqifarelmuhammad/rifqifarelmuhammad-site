@@ -2,7 +2,7 @@ import { AnimationWordsInterface } from './interface'
 
 export const ANIMATION_WORDS: AnimationWordsInterface[] = [
   {
-    word: 'Jakarta',
+    word: 'Indonesia',
     color: 'from-[#FFDD00] to-[#0B4CCB]',
   },
   {
