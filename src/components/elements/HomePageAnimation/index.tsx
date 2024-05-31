@@ -6,6 +6,7 @@ export const HomePageAnimation = () => (
       <div className="animate-scroll-up">
         {ANIMATION_WORDS.map((word) => (
           <h2
+            key={word.word}
             className={`text-[32px] md:text-[56px] font-bold text-center text-transparent bg-clip-text bg-gradient-to-br ${word.color}`}
           >
             {word.word}

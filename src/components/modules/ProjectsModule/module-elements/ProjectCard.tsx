@@ -15,7 +15,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="w-full bg-[#ffffff]/[0.1] rounded-lg shadow-lg lg:shadow-xl relative">
       <div className="relative w-full aspect-[7/3] md:aspect-[3/1] lg:aspect-[5/2] xl:aspect-[3/1] overflow-hidden rounded-lg">
-        <Image alt={title} src={getImage(imageUrl)} layout="fill" />
+        <Image alt={title} src={getImage(imageUrl)} fill sizes="none" priority />
       </div>
       <div className="flex flex-col gap-3 md:gap-4 px-3 md:px-4 py-2">
         <div className="flex flex-col gap-1">
@@ -28,8 +28,10 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         </div>
 
         <div className="flex flex-wrap gap-3 lg:gap-4 pb-12 md:pb-[60px] lg:pb-16">
-          {techStacks.map((Icon) => (
-            <Icon className="w-7 md:w-8 lg:w-9 h-7 md:h-8 lg:h-9" />
+          {techStacks.map((Icon, idx) => (
+            <div key={`icon-${idx+1}`}>
+              <Icon className="w-7 md:w-8 lg:w-9 h-7 md:h-8 lg:h-9" />
+            </div>
           ))}
         </div>
 

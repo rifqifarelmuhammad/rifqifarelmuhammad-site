@@ -11,7 +11,7 @@ export const ProjectsModule = () => {
         </h1>
         <div className="grid lg:grid-cols-2 gap-8">
           {PROJECTS.map((props) => (
-            <ProjectCard {...props} />
+            <ProjectCard key={props.title} {...props} />
           ))}
         </div>
       </section>

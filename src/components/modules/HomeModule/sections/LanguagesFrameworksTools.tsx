@@ -9,7 +9,7 @@ export const LanguagesFrameworksTools = () => (
     </h2>
 
     {TECH_STACK.map(({ title, LOGOS }) => (
-      <TechStack title={title} LOGOS={LOGOS} />
+      <TechStack key={title} title={title} LOGOS={LOGOS} />
     ))}
   </div>
 )

@@ -18,7 +18,7 @@ export const Footer = () => {
         <div className="flex flex-row gap-5 lg:gap-6 justify-center">
           {CONTACTS.map(({ type, Icon, url }) =>
             type === 'MAIL' ? (
-              <button onClick={handleMailButton}>
+              <button onClick={handleMailButton} key={type}>
                 <Icon className="text-[#ffffff]/[0.75] w-7 lg:w-9 h-7 lg:h-9" />
               </button>
             ) : (

@@ -5,11 +5,13 @@ import { MENUS } from './constant'
 import { NavLink } from './NavLink'
 import { useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/20/solid'
+import { useWindowSize } from 'usehooks-ts'
 
 export const Navbar = () => {
   const router = useRouter()
   const { pathname } = router
   const [isCollapsed, setIsCollapsed] = useState(true)
+  const { width } = useWindowSize()
 
   const handleNavCollapse = () => setIsCollapsed(!isCollapsed)
 
@@ -27,26 +29,30 @@ export const Navbar = () => {
           />
         </Link>
 
-        <div className="items-center gap-7 hidden md:flex">
-          {MENUS.map(({ label, url }) => (
-            <NavLink label={label} url={url} currentLocation={pathname} />
-          ))}
-        </div>
+        {width >= 768 && (
+          <div className="items-center gap-7 hidden md:flex">
+            {MENUS.map(({ label, url }) => (
+              <NavLink key={label} label={label} url={url} currentLocation={pathname} />
+            ))}
+          </div>
+        )}
 
         <button className="flex md:hidden" onClick={handleNavCollapse}>
           <Bars3Icon className="w-6 text-white" />
         </button>
       </div>
 
-      <div
-        className={`flex-col items-start gap-4 py-4 px-4 md:hidden ${
-          isCollapsed ? 'hidden' : 'flex'
-        }`}
-      >
-        {MENUS.map(({ label, url }) => (
-          <NavLink label={label} url={url} currentLocation={pathname} />
-        ))}
-      </div>
+      {width < 768 && (
+        <div
+          className={`flex-col items-start gap-4 py-4 px-4 md:hidden ${
+            isCollapsed ? 'hidden' : 'flex'
+          }`}
+        >
+          {MENUS.map(({ label, url }) => (
+            <NavLink key={label} label={label} url={url} currentLocation={pathname} />
+          ))}
+        </div>
+      )}
     </nav>
   )
 }

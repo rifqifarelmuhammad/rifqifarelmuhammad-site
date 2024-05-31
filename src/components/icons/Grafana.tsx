@@ -20,13 +20,13 @@ export const Grafana: React.FC<IconProps> = ({
       y2="67.873"
       gradientUnits="userSpaceOnUse"
     >
-      <stop offset="0" stop-color="#fed100" />
-      <stop offset=".033" stop-color="#fcca00" />
-      <stop offset=".221" stop-color="#f3a400" />
-      <stop offset=".408" stop-color="#ec8601" />
-      <stop offset=".592" stop-color="#e77101" />
-      <stop offset=".771" stop-color="#e46401" />
-      <stop offset=".941" stop-color="#e36001" />
+      <stop offset="0" stopColor="#fed100" />
+      <stop offset=".033" stopColor="#fcca00" />
+      <stop offset=".221" stopColor="#f3a400" />
+      <stop offset=".408" stopColor="#ec8601" />
+      <stop offset=".592" stopColor="#e77101" />
+      <stop offset=".771" stopColor="#e46401" />
+      <stop offset=".941" stopColor="#e36001" />
     </linearGradient>
     <path
       fill="url(#jIYxgsP_yq-lafjo32ajaa)"
