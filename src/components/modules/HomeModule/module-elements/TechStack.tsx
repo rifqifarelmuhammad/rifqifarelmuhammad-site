@@ -8,7 +8,11 @@ export const TechStack: React.FC<TechStackProps> = ({ title, LOGOS }) => (
     </h3>
     <div className="flex flex-wrap justify-center gap-8 lg:gap-12">
       {LOGOS.map(({ Logo, LogoColorless }, idx) => (
-        <LogoAnimation key={`logo-${idx+1}`} Logo={Logo} LogoColorless={LogoColorless} />
+        <LogoAnimation
+          key={`logo-${idx + 1}`}
+          Logo={Logo}
+          LogoColorless={LogoColorless}
+        />
       ))}
     </div>
   </>

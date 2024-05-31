@@ -32,7 +32,12 @@ export const Navbar = () => {
         {width >= 768 && (
           <div className="items-center gap-7 hidden md:flex">
             {MENUS.map(({ label, url }) => (
-              <NavLink key={label} label={label} url={url} currentLocation={pathname} />
+              <NavLink
+                key={label}
+                label={label}
+                url={url}
+                currentLocation={pathname}
+              />
             ))}
           </div>
         )}
@@ -49,7 +54,12 @@ export const Navbar = () => {
           }`}
         >
           {MENUS.map(({ label, url }) => (
-            <NavLink key={label} label={label} url={url} currentLocation={pathname} />
+            <NavLink
+              key={label}
+              label={label}
+              url={url}
+              currentLocation={pathname}
+            />
           ))}
         </div>
       )}
