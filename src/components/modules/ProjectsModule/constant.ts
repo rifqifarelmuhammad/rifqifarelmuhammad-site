@@ -58,7 +58,7 @@ export const PROJECTS: ProjectCardProps[] = [
       Gcp,
     ],
     webProps: {
-      logoUrl: '/icons/worldie.png',
+      logoUrl: '/images/worldie.png',
       webUrl: 'https://worldie-atw.vercel.app/',
     },
     githubUrl: 'https://github.com/orgs/WorldieATW/repositories',

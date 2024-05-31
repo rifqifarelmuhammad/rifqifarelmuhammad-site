@@ -18,7 +18,7 @@ export const Navbar = () => {
       <div className="flex items-center py-3 px-7 md:px-12 lg:px-16 xl:px-20 justify-between w-full">
         <Link href={'/'}>
           <Image
-            src={'/icons/rfm.png'}
+            src={'/images/rfm.png'}
             alt={'rifqi-farel-muhammad'}
             width={48}
             height={48}
