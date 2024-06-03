@@ -1,5 +1,4 @@
 interface AnimationWordsInterface {
-    word: string
-    color: string
+  word: string
+  color: string
 }
-  
