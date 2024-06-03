@@ -27,9 +27,9 @@ export const getStaticProps: GetStaticProps = () => {
             url: getImage('v1717436943/rfm_z6kius.png'),
             width: 48,
             height: 48,
-            alt: 'Rifqi Farel Muhammad'
-          }
-        ]
+            alt: 'Rifqi Farel Muhammad',
+          },
+        ],
       },
     },
   }

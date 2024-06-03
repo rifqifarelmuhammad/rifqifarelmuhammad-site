@@ -7,7 +7,7 @@ import { useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/20/solid'
 import { useWindowSize } from 'usehooks-ts'
 import { AnimatePresence, motion } from 'framer-motion'
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineClose } from 'react-icons/ai'
 
 export const Navbar = () => {
   const router = useRouter()
@@ -43,7 +43,10 @@ export const Navbar = () => {
           </div>
         )}
 
-        <button className="flex md:hidden" onClick={() => setIsNavbarOpen(!isNavbarOpen)}>
+        <button
+          className="flex md:hidden"
+          onClick={() => setIsNavbarOpen(!isNavbarOpen)}
+        >
           <Bars3Icon className="w-6 text-white" />
         </button>
       </div>
@@ -57,10 +60,12 @@ export const Navbar = () => {
             transition={{ duration: 0.3 }}
             className="fixed inset-y-0 w-full bg-[#100E0E] z-50 p-5 flex flex-col gap-6"
           >
-            <div className='flex justify-end'>
-              <button onClick={() => setIsNavbarOpen(false)}><AiOutlineClose className='text-white w-5 h-5' /></button>
+            <div className="flex justify-end">
+              <button onClick={() => setIsNavbarOpen(false)}>
+                <AiOutlineClose className="text-white w-5 h-5" />
+              </button>
             </div>
-            <div className='flex flex-col gap-4 items-center'>
+            <div className="flex flex-col gap-4 items-center">
               {MENUS.map(({ label, url, Icon }) => (
                 <NavLink
                   key={label}
