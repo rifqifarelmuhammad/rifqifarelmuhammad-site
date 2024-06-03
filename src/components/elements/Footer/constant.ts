@@ -1,10 +1,12 @@
 import { ContactInterface } from './interface'
-import { GrGithub, GrLinkedin, GrMailOption } from 'react-icons/gr'
+import { GrGithub, GrLinkedin } from 'react-icons/gr'
+import { TfiEmail } from "react-icons/tfi";
+import { BsMedium } from "react-icons/bs";
 
 export const CONTACTS: ContactInterface[] = [
   {
     type: 'MAIL',
-    Icon: GrMailOption,
+    Icon: TfiEmail,
     url: 'rifqifarel222@gmail.com',
   },
   {
@@ -17,4 +19,9 @@ export const CONTACTS: ContactInterface[] = [
     Icon: GrLinkedin,
     url: 'https://www.linkedin.com/in/rifqi-farel-muhammad',
   },
+  {
+    type: 'MEDIUM',
+    Icon: BsMedium,
+    url: 'https://medium.com/@rifqifarel222'
+  }
 ]

@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Navbar />
       <AnimatePresence mode="wait">
         <motion.div>
-          <main className="w-full min-h-screen bg-[#100E0E]">
+          <main className="w-full min-h-screen">
             <Component {...pageProps} key={router.pathname} />
           </main>
         </motion.div>

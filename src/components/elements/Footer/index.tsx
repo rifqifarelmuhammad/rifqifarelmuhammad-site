@@ -11,24 +11,24 @@ export const Footer = () => {
   }
 
   return (
-    <div className="flex justify-center">
+    <footer className="flex justify-center">
       <div className="max-w-[1440px] w-full flex flex-col gap-4 lg:gap-5 pb-4 lg:pb-5">
-        <hr className="w-full" />
+        <h3 className='text-white text-center font-bold text-lg'>Contact Me</h3>
 
-        <div className="flex flex-row gap-5 lg:gap-6 justify-center">
+        <div className="flex flex-row gap-5 justify-center">
           {CONTACTS.map(({ type, Icon, url }) =>
             type === 'MAIL' ? (
               <button onClick={handleMailButton} key={type}>
-                <Icon className="text-[#ffffff]/[0.75] w-7 lg:w-9 h-7 lg:h-9" />
+                <Icon className="text-[#FFF500] w-6 h-6" />
               </button>
             ) : (
               <Link key={type} href={url} target="_blank">
-                <Icon className="text-[#ffffff]/[0.75] w-7 lg:w-9 h-7 lg:h-9" />
+                <Icon className="text-[#FFF500] w-6 h-6" />
               </Link>
             )
           )}
         </div>
       </div>
-    </div>
+    </footer>
   )
 }

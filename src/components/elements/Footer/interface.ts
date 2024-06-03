@@ -1,6 +1,6 @@
 import { IconType } from 'react-icons'
 
-export type ContactType = 'LINKEDIN' | 'MAIL' | 'GITHUB'
+export type ContactType = 'LINKEDIN' | 'MAIL' | 'GITHUB' | 'MEDIUM'
 
 export interface ContactInterface {
   type: ContactType
