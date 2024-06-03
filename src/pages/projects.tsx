@@ -1,4 +1,5 @@
 import { ProjectsModule } from '@modules'
+import { getImage } from '@utils'
 import { NextPage } from 'next'
 import { GetStaticProps } from 'next'
 
@@ -21,6 +22,14 @@ export const getStaticProps: GetStaticProps = () => {
         title: META_TITLE,
         description: META_DESCRIPTION,
         url: 'https://rifqifarelmuhammad.com/',
+        images: [
+          {
+            url: getImage('v1717436943/rfm_z6kius.png'),
+            width: 48,
+            height: 48,
+            alt: 'Rifqi Farel Muhammad'
+          }
+        ]
       },
     },
   }

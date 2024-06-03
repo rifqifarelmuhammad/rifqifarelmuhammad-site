@@ -2,6 +2,7 @@ import { HomePageAnimation } from '@elements'
 import { useEffect, useState } from 'react'
 import { HomeModule } from '@modules'
 import { GetStaticProps } from 'next'
+import { getImage } from '@utils'
 
 export default function Home() {
   const [animation, setAnimation] = useState<boolean>(true)
@@ -36,6 +37,14 @@ export const getStaticProps: GetStaticProps = () => {
         title: META_TITLE,
         description: META_DESCRIPTION,
         url: 'https://rifqifarelmuhammad.com/',
+        images: [
+          {
+            url: getImage('v1717436943/rfm_z6kius.png'),
+            width: 48,
+            height: 48,
+            alt: 'Rifqi Farel Muhammad'
+          }
+        ]
       },
     },
   }
