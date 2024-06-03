@@ -16,7 +16,7 @@ export const Navbar = () => {
   const { width } = useWindowSize()
 
   return (
-    <nav className="sticky inset-0 z-50 w-full flex flex-col md:items-center justify-center shadow-lg bg-[#100E0E]">
+    <nav id='navbar' className="sticky inset-0 z-50 w-full flex flex-col md:items-center justify-center shadow-lg bg-[#100E0E]">
       <div className="flex items-center py-4 px-7 md:px-12 lg:px-16 xl:px-20 justify-between w-full">
         <Link href={'/'}>
           <Image

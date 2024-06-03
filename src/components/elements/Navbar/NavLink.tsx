@@ -13,7 +13,7 @@ export const NavLink: React.FC<NavLinkProps> = ({
   return (
     <Link
       href={url}
-      className={`group flex md:flex-col gap-2 md:gap-0 items-center font-medium rounded-full text-lg ${
+      className={`group flex md:flex-col gap-2 md:gap-0 items-center font-medium rounded-full ${
         width < 768 &&
         'w-[75%] justify-center py-1 duration-300 transition-all ease-in-out'
       } ${
