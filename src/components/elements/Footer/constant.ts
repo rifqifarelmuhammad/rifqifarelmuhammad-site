@@ -1,7 +1,7 @@
 import { ContactInterface } from './interface'
 import { GrGithub, GrLinkedin } from 'react-icons/gr'
-import { TfiEmail } from "react-icons/tfi";
-import { BsMedium } from "react-icons/bs";
+import { TfiEmail } from 'react-icons/tfi'
+import { BsMedium } from 'react-icons/bs'
 
 export const CONTACTS: ContactInterface[] = [
   {
@@ -22,6 +22,6 @@ export const CONTACTS: ContactInterface[] = [
   {
     type: 'MEDIUM',
     Icon: BsMedium,
-    url: 'https://medium.com/@rifqifarel222'
-  }
+    url: 'https://medium.com/@rifqifarel222',
+  },
 ]
