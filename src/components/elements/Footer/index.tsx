@@ -11,7 +11,7 @@ export const Footer = () => {
   }
 
   return (
-    <footer id='contacts' className="flex justify-center">
+    <footer id="contacts" className="flex justify-center">
       <div className="max-w-[1440px] w-full flex flex-col gap-4 lg:gap-5 pb-4 lg:pb-5">
         <h3 className="text-white text-center font-bold text-lg">Contact Me</h3>
 
