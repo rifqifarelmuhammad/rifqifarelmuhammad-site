@@ -1,7 +1,7 @@
 import { LogoAnimation } from '.'
 import { TechStackProps } from '../../types/homeModule'
 
-export const TechStack: React.FC<TechStackProps> = ({ title, logos }) => (
+export const TechStack = ({ title, logos }: TechStackProps): JSX.Element => (
   <>
     <h3 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl font-bold text-center">
       {title}

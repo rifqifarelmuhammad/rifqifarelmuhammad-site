@@ -1,2 +1,2 @@
-export * from './HeyThere'
+export * from './Hero'
 export * from './LanguagesFrameworksTools'

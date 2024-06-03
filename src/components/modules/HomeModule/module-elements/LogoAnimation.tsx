@@ -1,6 +1,6 @@
 import { LogoProps } from '../../types/homeModule'
 
-export const LogoAnimation: React.FC<LogoProps> = ({ Logo, LogoColorless }) => (
+export const LogoAnimation = ({ Logo, LogoColorless }: LogoProps): JSX.Element => (
   <div className="w-[15%] relative group">
     <Logo
       size="w-full"
