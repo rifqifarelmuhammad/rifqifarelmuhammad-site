@@ -1,7 +1,7 @@
 import { AiFillHome } from 'react-icons/ai'
 import { FaCode } from 'react-icons/fa'
 import { BiPhone } from 'react-icons/bi'
-import { MenuInterface } from './interface'
+import { MenuInterface } from '../types/navbar'
 
 export const MENUS: MenuInterface[] = [
   {

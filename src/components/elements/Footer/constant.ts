@@ -1,4 +1,4 @@
-import { ContactInterface } from './interface'
+import { ContactInterface } from '../types/footer'
 import { GrGithub, GrLinkedin } from 'react-icons/gr'
 import { TfiEmail } from 'react-icons/tfi'
 import { BsMedium } from 'react-icons/bs'

@@ -50,7 +50,7 @@ import {
   Typescript,
   TypescriptColorless,
 } from '@icons'
-import { LogoProps, TechStackProps } from './interface'
+import { LogoProps, TechStackProps } from '../types/homeModule'
 
 export const LANGUAGES: LogoProps[] = [
   {
@@ -164,14 +164,14 @@ export const TOOLS: LogoProps[] = [
 export const TECH_STACK: TechStackProps[] = [
   {
     title: 'Languages',
-    LOGOS: LANGUAGES,
+    logos: LANGUAGES,
   },
   {
     title: 'Frameworks',
-    LOGOS: FRAMEWORKS,
+    logos: FRAMEWORKS,
   },
   {
     title: 'Tools',
-    LOGOS: TOOLS,
+    logos: TOOLS,
   },
 ]

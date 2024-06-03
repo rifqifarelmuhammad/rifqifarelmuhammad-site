@@ -2,7 +2,7 @@ import { FC } from 'react'
 import { IconProps } from 'src/components/icons/interface'
 import { IconType } from 'react-icons'
 
-export interface ProjectCardProps {
+interface ProjectCardProps {
   title: string
   imageUrl: string
   description: string

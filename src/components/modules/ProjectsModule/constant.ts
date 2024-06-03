@@ -13,7 +13,7 @@ import {
   Tailwind,
   Typescript,
 } from '@icons'
-import { ProjectCardProps } from './interface'
+import { ProjectCardProps } from '../types/projectsModule'
 
 export const PROJECTS: ProjectCardProps[] = [
   {

@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import { ProjectCardProps } from '../interface'
 import { GrGithub } from 'react-icons/gr'
 import Image from 'next/image'
 import { getImage } from '@utils'
+import { ProjectCardProps } from '../../types/projectsModule'
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
   title,

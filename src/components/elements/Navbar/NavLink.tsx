@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { NavLinkProps } from './interface'
+import { NavLinkProps } from '../types/navbar'
 import { useWindowSize } from 'usehooks-ts'
 
 export const NavLink: React.FC<NavLinkProps> = ({

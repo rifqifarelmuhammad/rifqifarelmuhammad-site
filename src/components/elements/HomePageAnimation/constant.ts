@@ -1,5 +1,3 @@
-import { AnimationWordsInterface } from './interface'
-
 export const ANIMATION_WORDS: AnimationWordsInterface[] = [
   {
     word: 'Indonesia',

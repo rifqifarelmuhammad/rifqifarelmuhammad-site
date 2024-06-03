@@ -1,12 +1,12 @@
 import { FC } from 'react'
 import { IconProps } from 'src/components/icons/interface'
 
-export interface LogoProps {
+interface LogoProps {
   Logo: FC<IconProps>
   LogoColorless: FC<IconProps>
 }
 
-export interface TechStackProps {
+interface TechStackProps {
   title: string
-  LOGOS: LogoProps[]
+  logos: LogoProps[]
 }

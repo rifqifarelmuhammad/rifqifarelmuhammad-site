@@ -1,5 +1,5 @@
 import { ReactNode } from 'react'
 
-export interface PageAnimationProps {
+interface PageAnimationProps {
   children: ReactNode
 }

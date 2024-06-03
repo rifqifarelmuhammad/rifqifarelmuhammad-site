@@ -1,4 +1,4 @@
-import { LogoProps } from '../interface'
+import { LogoProps } from "../../types/homeModule";
 
 export const LogoAnimation: React.FC<LogoProps> = ({ Logo, LogoColorless }) => (
   <div className="w-[15%] relative group">
