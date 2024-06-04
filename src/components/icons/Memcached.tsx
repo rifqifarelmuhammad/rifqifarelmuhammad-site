@@ -24,11 +24,11 @@ export const Memcached = ({
         id="linearGradient-1"
       >
         <stop
-          stop-color={colorless ? COLORLESS_PRIMARY_COLOR : '#574C4A'}
+          stopColor={colorless ? COLORLESS_PRIMARY_COLOR : '#574C4A'}
           offset="0%"
         />
         <stop
-          stop-color={colorless ? COLORLESS_PRIMARY_COLOR : '#80716D'}
+          stopColor={colorless ? COLORLESS_PRIMARY_COLOR : '#80716D'}
           offset="100%"
         />
       </linearGradient>
@@ -40,11 +40,11 @@ export const Memcached = ({
         id="linearGradient-2"
       >
         <stop
-          stop-color={colorless ? COLORLESS_PRIMARY_COLOR : '#268D83'}
+          stopColor={colorless ? COLORLESS_PRIMARY_COLOR : '#268D83'}
           offset="0%"
         />
         <stop
-          stop-color={colorless ? COLORLESS_PRIMARY_COLOR : '#2EA19E'}
+          stopColor={colorless ? COLORLESS_PRIMARY_COLOR : '#2EA19E'}
           offset="100%"
         />
       </linearGradient>
@@ -57,11 +57,11 @@ export const Memcached = ({
         id="radialGradient-3"
       >
         <stop
-          stop-color={colorless ? COLORLESS_PRIMARY_COLOR : '#DB7C7C'}
+          stopColor={colorless ? COLORLESS_PRIMARY_COLOR : '#DB7C7C'}
           offset="0%"
         />
         <stop
-          stop-color={colorless ? COLORLESS_PRIMARY_COLOR : '#C83737'}
+          stopColor={colorless ? COLORLESS_PRIMARY_COLOR : '#C83737'}
           offset="100%"
         />
       </radialGradient>
@@ -74,11 +74,11 @@ export const Memcached = ({
         id="radialGradient-4"
       >
         <stop
-          stop-color={colorless ? COLORLESS_PRIMARY_COLOR : '#DB7C7C'}
+          stopColor={colorless ? COLORLESS_PRIMARY_COLOR : '#DB7C7C'}
           offset="0%"
         />
         <stop
-          stop-color={colorless ? COLORLESS_PRIMARY_COLOR : '#C83737'}
+          stopColor={colorless ? COLORLESS_PRIMARY_COLOR : '#C83737'}
           offset="100%"
         />
       </radialGradient>

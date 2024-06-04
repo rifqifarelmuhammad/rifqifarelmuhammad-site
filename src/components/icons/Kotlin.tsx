@@ -37,23 +37,23 @@ export const Kotlin = ({
       >
         <stop
           offset="0.097"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#0095D5'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#0095D5'}
         />
         <stop
           offset="0.301"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#238AD9'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#238AD9'}
         />
         <stop
           offset="0.621"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#557BDE'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#557BDE'}
         />
         <stop
           offset="0.864"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#7472E2'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#7472E2'}
         />
         <stop
           offset="1"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#806EE3'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#806EE3'}
         />
       </linearGradient>
       <linearGradient
@@ -66,19 +66,19 @@ export const Kotlin = ({
       >
         <stop
           offset="0.118"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#0095D5'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#0095D5'}
         />
         <stop
           offset="0.418"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#3C83DC'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#3C83DC'}
         />
         <stop
           offset="0.696"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#6D74E1'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#6D74E1'}
         />
         <stop
           offset="0.833"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#806EE3'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#806EE3'}
         />
       </linearGradient>
       <linearGradient
@@ -91,27 +91,27 @@ export const Kotlin = ({
       >
         <stop
           offset="0.107"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#C757BC'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#C757BC'}
         />
         <stop
           offset="0.214"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#D0609A'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#D0609A'}
         />
         <stop
           offset="0.425"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#E1725C'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#E1725C'}
         />
         <stop
           offset="0.605"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#EE7E2F'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#EE7E2F'}
         />
         <stop
           offset="0.743"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#F58613'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#F58613'}
         />
         <stop
           offset="0.823"
-          stop-color={colorless ? COLORLESS_SECONDARY_COLOR : '#F88909'}
+          stopColor={colorless ? COLORLESS_SECONDARY_COLOR : '#F88909'}
         />
       </linearGradient>
     </defs>

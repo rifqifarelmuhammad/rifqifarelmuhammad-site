@@ -30,9 +30,9 @@ export const Android = ({
       d="M74.743 70.009l15.022 26.02M193.276 70.009l-15.023 26.02"
       fill="none"
       stroke={colorless ? COLORLESS_PRIMARY_COLOR : '#a4c639'}
-      stroke-width="3"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="3"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     />
     <path
       fill={colorless ? COLORLESS_SECONDARY_COLOR : '#ffffff'}
