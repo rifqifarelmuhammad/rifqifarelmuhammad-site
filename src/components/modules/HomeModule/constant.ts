@@ -62,7 +62,7 @@ export const FRAMEWORKS: FC<IconProps>[] = [
   Next,
   React,
   Flutter,
-  Android
+  Android,
 ]
 
 export const TOOLS: FC<IconProps>[] = [
@@ -79,7 +79,7 @@ export const TOOLS: FC<IconProps>[] = [
   Firebase,
   Prometheus,
   Grafana,
-  Memcached
+  Memcached,
 ]
 
 export const TECH_STACK: TechStackProps[] = [
