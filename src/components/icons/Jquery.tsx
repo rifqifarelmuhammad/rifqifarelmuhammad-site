@@ -1,3 +1,4 @@
+import { COLORLESS_PRIMARY_COLOR } from './constant'
 import { IconProps } from './interface'
 
 export const Jquery: React.FC<IconProps> = ({
@@ -5,10 +6,11 @@ export const Jquery: React.FC<IconProps> = ({
   fill = '#78cff5',
   stroke,
   className,
+  colorless
 }) => (
   <svg
     className={`${className} ${stroke} ${size}`}
-    fill={fill}
+    fill={colorless? COLORLESS_PRIMARY_COLOR : fill}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
   >

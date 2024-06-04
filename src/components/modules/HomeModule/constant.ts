@@ -1,170 +1,85 @@
 import {
+  Android,
   Aws,
-  AwsColorless,
   Cloudinary,
-  CloudinaryColorless,
   Css,
-  CssColorless,
   Dart,
-  DartColorless,
   Django,
-  DjangoColorless,
   Docker,
-  DockerColorless,
+  Express,
   Firebase,
-  FirebaseColorless,
   Flutter,
-  FlutterColorless,
   Gcp,
-  GcpColorless,
   Golang,
-  GolangColorless,
   Grafana,
-  GrafanaColorless,
   Html,
-  HtmlColorless,
   Java,
-  JavaColorless,
   Javascript,
-  JavascriptColorless,
   Jquery,
-  JqueryColorless,
+  Kotlin,
+  Kubernetes,
+  Memcached,
   Mysql,
-  MysqlColorless,
   Nest,
-  NestColorless,
   Next,
-  NextColorless,
   Postgresql,
-  PostgresqlColorless,
   Prometheus,
-  PrometheusColorless,
   Python,
-  PythonColorless,
   React,
-  ReactColorless,
+  Redux,
+  Rust,
   Spring,
-  SpringColorless,
   Tailwind,
-  TailwindColorless,
   Typescript,
-  TypescriptColorless,
 } from '@icons'
 import {
   AboutCardProps,
-  LogoProps,
   SpecialtyCardProps,
   TechStackProps,
 } from '../types/homeModule'
 import { FaCode, FaLaptop, FaMobileAlt } from 'react-icons/fa'
+import { IconProps } from 'src/components/icons/interface'
+import { FC } from 'react'
 
-export const LANGUAGES: LogoProps[] = [
-  {
-    Logo: Java,
-    LogoColorless: JavaColorless,
-  },
-  {
-    Logo: Typescript,
-    LogoColorless: TypescriptColorless,
-  },
-  {
-    Logo: Javascript,
-    LogoColorless: JavascriptColorless,
-  },
-  {
-    Logo: Python,
-    LogoColorless: PythonColorless,
-  },
-  {
-    Logo: Golang,
-    LogoColorless: GolangColorless,
-  },
-  {
-    Logo: Dart,
-    LogoColorless: DartColorless,
-  },
-  {
-    Logo: Html,
-    LogoColorless: HtmlColorless,
-  },
-  {
-    Logo: Css,
-    LogoColorless: CssColorless,
-  },
+export const LANGUAGES: FC<IconProps>[] = [
+  Java,
+  Typescript,
+  Javascript,
+  Python,
+  Golang,
+  Kotlin,
+  Dart,
+  Rust,
+  Html,
+  Css,
 ]
 
-export const FRAMEWORKS: LogoProps[] = [
-  {
-    Logo: Nest,
-    LogoColorless: NestColorless,
-  },
-  {
-    Logo: Spring,
-    LogoColorless: SpringColorless,
-  },
-  {
-    Logo: Django,
-    LogoColorless: DjangoColorless,
-  },
-  {
-    Logo: Next,
-    LogoColorless: NextColorless,
-  },
-  {
-    Logo: React,
-    LogoColorless: ReactColorless,
-  },
-  {
-    Logo: Flutter,
-    LogoColorless: FlutterColorless,
-  },
+export const FRAMEWORKS: FC<IconProps>[] = [
+  Nest,
+  Spring,
+  Django,
+  Express,
+  Next,
+  React,
+  Flutter,
+  Android
 ]
 
-export const TOOLS: LogoProps[] = [
-  {
-    Logo: Postgresql,
-    LogoColorless: PostgresqlColorless,
-  },
-  {
-    Logo: Mysql,
-    LogoColorless: MysqlColorless,
-  },
-  {
-    Logo: Tailwind,
-    LogoColorless: TailwindColorless,
-  },
-  {
-    Logo: Jquery,
-    LogoColorless: JqueryColorless,
-  },
-  {
-    Logo: Docker,
-    LogoColorless: DockerColorless,
-  },
-  {
-    Logo: Gcp,
-    LogoColorless: GcpColorless,
-  },
-  {
-    Logo: Aws,
-    LogoColorless: AwsColorless,
-  },
-  {
-    Logo: Cloudinary,
-    LogoColorless: CloudinaryColorless,
-  },
-  {
-    Logo: Firebase,
-    LogoColorless: FirebaseColorless,
-  },
-  {
-    Logo: Prometheus,
-    LogoColorless: PrometheusColorless,
-  },
-  {
-    Logo: Grafana,
-    LogoColorless: GrafanaColorless,
-  },
+export const TOOLS: FC<IconProps>[] = [
+  Postgresql,
+  Mysql,
+  Tailwind,
+  Redux,
+  Jquery,
+  Docker,
+  Kubernetes,
+  Gcp,
+  Aws,
+  Cloudinary,
+  Firebase,
+  Prometheus,
+  Grafana,
+  Memcached
 ]
 
 export const TECH_STACK: TechStackProps[] = [

@@ -1,3 +1,4 @@
+import { COLORLESS_PRIMARY_COLOR } from './constant'
 import { IconProps } from './interface'
 
 export const Django: React.FC<IconProps> = ({
@@ -5,12 +6,13 @@ export const Django: React.FC<IconProps> = ({
   fill = '#ffffff',
   stroke,
   className,
+  colorless
 }) => (
   <svg
     className={`${className} ${stroke} ${size}`}
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 512 512"
-    fill={fill}
+    fill={colorless? COLORLESS_PRIMARY_COLOR : fill}
   >
     <g id="5151e0c8492e5103c096af88a51f62ed">
       <path
