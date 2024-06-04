@@ -34,6 +34,7 @@ export const Hero = (): JSX.Element => (
             priority
             fill
             alt="hero"
+            sizes="none"
           />
         </div>
       </div>
