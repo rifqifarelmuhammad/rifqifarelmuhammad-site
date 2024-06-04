@@ -25,7 +25,7 @@ export default function Home() {
 export const getStaticProps: GetStaticProps = () => {
   const META_TITLE = 'Passionate Software Engineer | Rifqi Farel Muhammad'
   const META_DESCRIPTION =
-    'CS student at UI, passionate in software engineering. Experienced in building responsive websites and RESTful APIs.'
+    'Rifqi Farel Muhammad, a CS student at UI, passionate about software engineering. Experienced in building responsive websites and RESTful APIs.'
 
   return {
     props: {
