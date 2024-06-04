@@ -21,7 +21,7 @@ export const Navbar = (): JSX.Element => {
       className="sticky inset-0 z-50 w-full flex flex-col md:items-center justify-center shadow-lg bg-[#100E0E]"
     >
       <div className="flex items-center py-4 px-7 md:px-12 lg:px-16 xl:px-20 justify-between w-full">
-        <Link href={'/'} className='relative aspect-square w-12'>
+        <Link href={'/'} className="relative aspect-square w-12">
           <Image
             src={'/images/rfm.png'}
             alt={'rifqi-farel-muhammad'}
