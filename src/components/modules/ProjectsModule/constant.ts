@@ -82,7 +82,8 @@ export const PROJECTS: ProjectCardProps[] = [
       Grafana,
     ],
     git: 'https://github.com/AtmosGame',
-    documentation: 'https://drive.google.com/drive/folders/12d6vGoOtxPrllFjmnwksfc5hyFfAA_aC?usp=sharing'
+    documentation:
+      'https://drive.google.com/drive/folders/12d6vGoOtxPrllFjmnwksfc5hyFfAA_aC?usp=sharing',
   },
   {
     title: 'Socket Programming',
