@@ -1,13 +1,13 @@
 import { COLORLESS_PRIMARY_COLOR, COLORLESS_SECONDARY_COLOR } from './constant'
 import { IconProps } from './interface'
 
-export const Memcached: React.FC<IconProps> = ({
+export const Memcached = ({
   size,
   fill = 'none',
   stroke,
   className,
   colorless,
-}) => (
+}: IconProps): JSX.Element => (
   <svg
     className={`${className} ${stroke} ${size}`}
     viewBox="0 0 254 254"

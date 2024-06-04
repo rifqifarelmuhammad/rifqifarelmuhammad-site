@@ -1,13 +1,13 @@
 import { COLORLESS_PRIMARY_COLOR } from './constant'
 import { IconProps } from './interface'
 
-export const Rust: React.FC<IconProps> = ({
+export const Rust = ({
   size,
   fill = 'none',
   stroke,
   className,
   colorless,
-}) => (
+}: IconProps): JSX.Element => (
   <svg
     className={`${className} ${stroke} ${size}`}
     viewBox="0 0 256 256"

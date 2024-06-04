@@ -1,13 +1,13 @@
 import { COLORLESS_PRIMARY_COLOR, COLORLESS_SECONDARY_COLOR } from './constant'
 import { IconProps } from './interface'
 
-export const Android: React.FC<IconProps> = ({
+export const Android = ({
   size,
   fill = 'none',
   stroke,
   className,
   colorless,
-}) => (
+}: IconProps): JSX.Element => (
   <svg
     className={`${className} ${stroke} ${size}`}
     viewBox="19.932999999999996 68.509 228.155 228.155"

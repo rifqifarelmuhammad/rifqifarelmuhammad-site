@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { CONTACTS } from './constant'
 import toast from 'react-hot-toast'
 
-export const Footer = () => {
+export const Footer = (): JSX.Element => {
   const MAIL = CONTACTS[0]
 
   const handleMailButton = () => {

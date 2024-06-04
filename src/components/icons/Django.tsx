@@ -7,7 +7,7 @@ export const Django: React.FC<IconProps> = ({
   stroke,
   className,
   colorless,
-}) => (
+}: IconProps): JSX.Element => (
   <svg
     className={`${className} ${stroke} ${size}`}
     xmlns="http://www.w3.org/2000/svg"

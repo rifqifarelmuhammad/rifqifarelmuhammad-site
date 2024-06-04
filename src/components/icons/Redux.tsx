@@ -1,13 +1,13 @@
 import { COLORLESS_PRIMARY_COLOR } from './constant'
 import { IconProps } from './interface'
 
-export const Redux: React.FC<IconProps> = ({
+export const Redux = ({
   size,
   fill = 'none',
   stroke,
   className,
   colorless,
-}) => (
+}: IconProps): JSX.Element => (
   <svg
     className={`${className} ${stroke} ${size}`}
     viewBox="0 -6 256 256"

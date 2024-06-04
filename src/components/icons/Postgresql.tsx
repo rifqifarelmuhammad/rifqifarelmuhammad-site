@@ -1,13 +1,13 @@
 import { COLORLESS_PRIMARY_COLOR, COLORLESS_SECONDARY_COLOR } from './constant'
 import { IconProps } from './interface'
 
-export const Postgresql: React.FC<IconProps> = ({
+export const Postgresql = ({
   size,
   fill = 'none',
   stroke,
   className,
   colorless,
-}) => (
+}: IconProps): JSX.Element => (
   <svg
     className={`${className} ${stroke} ${size}`}
     viewBox="-4 0 264 264"

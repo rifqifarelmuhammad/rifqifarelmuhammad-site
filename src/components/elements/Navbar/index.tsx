@@ -9,7 +9,7 @@ import { useWindowSize } from 'usehooks-ts'
 import { AnimatePresence, motion } from 'framer-motion'
 import { AiOutlineClose } from 'react-icons/ai'
 
-export const Navbar = () => {
+export const Navbar = (): JSX.Element => {
   const router = useRouter()
   const { pathname } = router
   const [isNavbarOpen, setIsNavbarOpen] = useState(false)

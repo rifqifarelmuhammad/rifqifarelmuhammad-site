@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { getImage } from '@utils'
 import { ProjectCardProps } from '../../types/projectsModule'
 
-export const ProjectCard: React.FC<ProjectCardProps> = ({
+export const ProjectCard = ({
   title,
   imageUrl,
   description,
@@ -11,7 +11,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   website,
   git,
   documentation,
-}) => {
+}: ProjectCardProps): JSX.Element => {
   return (
     <div className="flex flex-col w-full bg-gradient-to-b from-[#210A0A] to-[#6B1D1D] rounded-lg shadow-lg lg:shadow-xl relative">
       <div className="relative w-full aspect-[500/225] overflow-hidden rounded-lg">

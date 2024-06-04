@@ -1,13 +1,13 @@
 import { COLORLESS_PRIMARY_COLOR } from './constant'
 import { IconProps } from './interface'
 
-export const Express: React.FC<IconProps> = ({
+export const Express = ({
   size,
   fill = 'none',
   stroke,
   className,
   colorless,
-}) => (
+}: IconProps): JSX.Element => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 48 48"

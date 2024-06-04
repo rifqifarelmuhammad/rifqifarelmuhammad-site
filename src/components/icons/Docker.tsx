@@ -7,7 +7,7 @@ export const Docker: React.FC<IconProps> = ({
   stroke,
   className,
   colorless,
-}) => (
+}: IconProps): JSX.Element => (
   <svg
     className={`${className} ${stroke} ${size}`}
     fill={fill}

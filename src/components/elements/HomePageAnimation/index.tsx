@@ -1,6 +1,6 @@
 import { ANIMATION_WORDS } from './constant'
 
-export const HomePageAnimation = () => (
+export const HomePageAnimation = (): JSX.Element => (
   <div className="w-full h-screen flex items-center justify-center">
     <div className="overflow-hidden h-[52px] md:h-[85px]">
       <div className="animate-scroll-up">

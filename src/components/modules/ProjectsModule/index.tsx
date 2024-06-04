@@ -2,7 +2,7 @@ import { Layout, PageAnimation } from '@elements'
 import { PROJECTS } from './constant'
 import { ProjectCard } from './module-elements'
 
-export const ProjectsModule = () => {
+export const ProjectsModule = (): JSX.Element => {
   return (
     <PageAnimation>
       <Layout>

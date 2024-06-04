@@ -1,13 +1,13 @@
 import { COLORLESS_PRIMARY_COLOR } from './constant'
 import { IconProps } from './interface'
 
-export const Grafana: React.FC<IconProps> = ({
+export const Grafana = ({
   size,
   fill = 'none',
   stroke,
   className,
   colorless,
-}) => (
+}: IconProps): JSX.Element => (
   <svg
     className={`${className} ${stroke} ${size}`}
     fill={fill}
