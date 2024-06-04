@@ -1,4 +1,4 @@
-import { TECH_STACK } from '../constant'
+import { TECH_STACK } from '../constants/techStack'
 import { TechStack } from '../module-elements'
 
 export const LanguagesFrameworksTools = (): JSX.Element => (

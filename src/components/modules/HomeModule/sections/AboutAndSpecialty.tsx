@@ -1,4 +1,4 @@
-import { ABOUTS, SPECIALTIES } from '../constant'
+import { ABOUTS, SPECIALTIES } from '../constants/aboutAndSpecialty'
 import { AboutCard } from '../module-elements/AboutCard'
 import { SpecialtyCard } from '../module-elements/SpecialtyCard'
 
