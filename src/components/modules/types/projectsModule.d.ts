@@ -7,9 +7,7 @@ interface ProjectCardProps {
   imageUrl: string
   description: string
   techStacks: (FC<IconProps> | IconType)[]
-  webProps?: {
-    logoUrl: string
-    webUrl: string
-  }
-  githubUrl: string
+  website?: string
+  git?: string
+  documentation?: string
 }

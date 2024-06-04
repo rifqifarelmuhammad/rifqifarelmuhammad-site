@@ -1,5 +1,6 @@
 import {
   Cloudinary,
+  Django,
   Docker,
   Gcp,
   Golang,
@@ -17,36 +18,38 @@ import { ProjectCardProps } from '../types/projectsModule'
 
 export const PROJECTS: ProjectCardProps[] = [
   {
+    title: 'CirrhoCheck',
+    imageUrl: 'v1717523671/CirrhoCheck_rlgxck.png',
+    description:
+      'CirrhoCheck is a Cirrhosis mortality risk calculator that will be used by Dr. Cipto Mangunkusumo Hospital.',
+    techStacks: [Django, Postgresql, Next, Typescript, Tailwind, Gcp],
+    website: 'https://cirrhocheck.com/',
+    git: 'https://gitlab.cs.ui.ac.id/cirrhocheck',
+    documentation:
+      'https://drive.google.com/drive/folders/1-BFkoyVMxArsBdN6lKolYap8KgK67dVu?usp=sharing',
+  },
+  {
     title: 'Personal Website',
-    imageUrl: 'v1703755830/personal-website_tya35z.png',
+    imageUrl: 'v1717522882/portfolio-website_k5t0vv.png',
     description:
       'The place where I put my information, such as skills, projects, and contacts.',
     techStacks: [Next, Typescript, Tailwind, Cloudinary],
-    webProps: {
-      logoUrl: '/icons/favicon.ico',
-      webUrl: 'https://rifqifarelmuhammad.vercel.app/',
-    },
-    githubUrl: 'https://github.com/orgs/SIUUU-CORP/repositories',
+    website: 'https://rifqifarelmuhammad.com/',
+    git: 'https://github.com/rifqifarelmuhammad/rifqifarelmuhammad-site',
   },
   {
     title: 'Warecloud',
     imageUrl: 'v1703596001/warecloud_xhravc.png',
     description:
-      'Warecloud is an application that allows a warehouse to integrate its branches so that each branch can request and send items to each other, enabling fast and\
-      efficient supply chain connectivity. Additionally, customers can order items online on Warecloud.',
+      'Warecloud is an application that allows warehouses to integrate their branches to create a more effective and efficient supply chain. Customers can also order items online directly through Warecloud.',
     techStacks: [Nest, Typescript, Postgresql, Next, Tailwind, Docker, Gcp],
-    webProps: {
-      logoUrl: '/icons/warecloud.ico',
-      webUrl: 'https://web.warecloud.net/',
-    },
-    githubUrl: 'https://github.com/orgs/SIUUU-CORP/repositories',
+    git: 'https://github.com/orgs/SIUUU-CORP/repositories',
   },
   {
     title: 'Worldie',
     imageUrl: 'v1703595536/worldie_iwnrvs.png',
     description:
-      'Worldie is a social media platform that is used by travelers to share suggestions and reviews about tourist destinations. Agents can manage their businesses\
-      on Worldie. Worldie was developed using Unified Process Model.',
+      'Warecloud is an application that allows warehouses to integrate their branches to create a more effective and efficient supply chain. Customers can also order items online directly through Warecloud.',
     techStacks: [
       Nest,
       Typescript,
@@ -57,17 +60,16 @@ export const PROJECTS: ProjectCardProps[] = [
       Docker,
       Gcp,
     ],
-    webProps: {
-      logoUrl: '/images/worldie.png',
-      webUrl: 'https://worldie-atw.vercel.app/',
-    },
-    githubUrl: 'https://github.com/orgs/WorldieATW/repositories',
+    website: 'https://worldie-atw.vercel.app/',
+    git: 'https://github.com/orgs/WorldieATW/repositories',
+    documentation:
+      'https://drive.google.com/file/d/1X_NoKMirfodSSb-vEW_7pr9D3imUb3d4/view',
   },
   {
     title: 'Atmos Game',
     imageUrl: 'v1703602048/atmos_mushl9.png',
     description:
-      'Atmos aims to create programs that can help users find applications & games they like, as well as help developers publish their applications.',
+      'Atmos is a game store application, aimed to help users find applications & games they like, as well as help developers publish their applications.',
     techStacks: [
       Spring,
       Java,
@@ -80,7 +82,7 @@ export const PROJECTS: ProjectCardProps[] = [
       Prometheus,
       Grafana,
     ],
-    githubUrl: 'https://github.com/AtmosGame',
+    git: 'https://github.com/AtmosGame',
   },
   {
     title: 'Socket Programming',
@@ -88,6 +90,6 @@ export const PROJECTS: ProjectCardProps[] = [
     description:
       'A simple API with server socket written from scratch in Golang.',
     techStacks: [Golang],
-    githubUrl: 'https://github.com/rifqifarelmuhammad/socket-programming',
+    git: 'https://github.com/rifqifarelmuhammad/socket-programming',
   },
 ]
