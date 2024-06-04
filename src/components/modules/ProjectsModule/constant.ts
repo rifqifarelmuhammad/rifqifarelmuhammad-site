@@ -60,7 +60,6 @@ export const PROJECTS: ProjectCardProps[] = [
       Docker,
       Gcp,
     ],
-    website: 'https://worldie-atw.vercel.app/',
     git: 'https://github.com/orgs/WorldieATW/repositories',
     documentation:
       'https://drive.google.com/file/d/1X_NoKMirfodSSb-vEW_7pr9D3imUb3d4/view',
@@ -83,6 +82,7 @@ export const PROJECTS: ProjectCardProps[] = [
       Grafana,
     ],
     git: 'https://github.com/AtmosGame',
+    documentation: 'https://drive.google.com/drive/folders/12d6vGoOtxPrllFjmnwksfc5hyFfAA_aC?usp=sharing'
   },
   {
     title: 'Socket Programming',
