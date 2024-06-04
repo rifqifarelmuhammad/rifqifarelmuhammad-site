@@ -1,5 +1,5 @@
-import { FaCode, FaLaptop, FaMobileAlt } from "react-icons/fa"
-import { AboutCardProps, SpecialtyCardProps } from "../../types/homeModule"
+import { FaCode, FaLaptop, FaMobileAlt } from 'react-icons/fa'
+import { AboutCardProps, SpecialtyCardProps } from '../../types/homeModule'
 
 export const ABOUTS: AboutCardProps[] = [
   {
