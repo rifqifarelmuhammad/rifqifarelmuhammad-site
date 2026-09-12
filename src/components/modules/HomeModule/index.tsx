@@ -4,10 +4,10 @@ import {
   AboutAndSpecialty,
   Education,
   Hero,
-  LanguagesFrameworksTools,
   ProfessionalExperience,
   Publications,
   SelectedProjects,
+  TechStackSection,
 } from './sections'
 
 export const HomeModule = (): JSX.Element => {
@@ -36,7 +36,7 @@ export const HomeModule = (): JSX.Element => {
         <SelectedProjects />
         <Publications />
         <Education />
-        <LanguagesFrameworksTools />
+        <TechStackSection />
       </Layout>
     </PageAnimation>
   )

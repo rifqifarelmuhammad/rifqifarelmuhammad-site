@@ -2,9 +2,15 @@ import { FC } from 'react'
 import { IconProps } from 'src/components/icons/interface'
 import { IconType } from 'react-icons'
 
-interface TechStackProps {
+interface TechStackItem {
+  name: string
+  // Absent when neither the local icon set nor react-icons carries the logo.
+  Icon?: FC<IconProps> | IconType
+}
+
+interface TechStackCategoryProps {
   title: string
-  logos: FC<IconProps>[]
+  technologies: TechStackItem[]
 }
 
 interface AboutCardProps {

@@ -1,99 +1,76 @@
 import {
-  Android,
   Aws,
-  Cloudinary,
-  Css,
-  Dart,
-  Django,
   Docker,
-  Express,
-  Firebase,
-  Flutter,
   Gcp,
   Golang,
   Grafana,
-  Html,
   Java,
-  Javascript,
-  Jquery,
-  Kotlin,
   Kubernetes,
-  Memcached,
-  Mysql,
   Nest,
   Next,
   Postgresql,
-  Prometheus,
   Python,
   React,
-  Redux,
-  Rust,
   Sentry,
-  SonarCloud,
-  SonarQube,
   Spring,
-  Tailwind,
   Typescript,
 } from '@icons'
-import { TechStackProps } from '../../types/homeModule'
-import { IconProps } from 'src/components/icons/interface'
-import { FC } from 'react'
+import {
+  SiApachekafka,
+  SiArgo,
+  SiBitbucket,
+  SiDatadog,
+  SiMongodb,
+  SiRedis,
+  SiVuedotjs,
+} from 'react-icons/si'
+import { TechStackCategoryProps } from '../../types/homeModule'
 
-export const LANGUAGES: FC<IconProps>[] = [
-  Java,
-  Typescript,
-  Javascript,
-  Python,
-  Kotlin,
-  Golang,
-  Dart,
-  Rust,
-  Html,
-  Css,
-]
-
-export const FRAMEWORKS: FC<IconProps>[] = [
-  Spring,
-  Nest,
-  Express,
-  Django,
-  Next,
-  React,
-  Flutter,
-  Android,
-]
-
-export const TOOLS: FC<IconProps>[] = [
-  Postgresql,
-  Mysql,
-  Tailwind,
-  Redux,
-  Docker,
-  Kubernetes,
-  Gcp,
-  Aws,
-  Firebase,
-  Prometheus,
-  Grafana,
-  Sentry,
-  SonarQube,
-  SonarCloud,
-  Jquery,
-  Cloudinary,
-  Memcached,
-]
-
-export const TECH_STACK: TechStackProps[] = [
+// Ordered by professional relevance rather than alphabetically.
+export const TECH_STACK: TechStackCategoryProps[] = [
   {
     title: 'Languages',
-    logos: LANGUAGES,
+    technologies: [
+      { name: 'Go', Icon: Golang },
+      { name: 'Java', Icon: Java },
+      { name: 'TypeScript', Icon: Typescript },
+      { name: 'Python', Icon: Python },
+    ],
   },
   {
-    title: 'Frameworks',
-    logos: FRAMEWORKS,
+    title: 'Backend & Data',
+    technologies: [
+      { name: 'Gin' },
+      { name: 'Spring Boot', Icon: Spring },
+      { name: 'NestJS', Icon: Nest },
+      { name: 'PostgreSQL', Icon: Postgresql },
+      { name: 'MongoDB', Icon: SiMongodb },
+      { name: 'Redis', Icon: SiRedis },
+      { name: 'gRPC' },
+      { name: 'Kafka', Icon: SiApachekafka },
+    ],
   },
   {
-    title: 'Tools',
-    logos: TOOLS,
+    title: 'Frontend & Mobile',
+    technologies: [
+      { name: 'Next.js', Icon: Next },
+      { name: 'React', Icon: React },
+      { name: 'Vue.js', Icon: SiVuedotjs },
+      { name: 'React Native', Icon: React },
+    ],
+  },
+  {
+    title: 'Cloud, DevOps & Observability',
+    technologies: [
+      { name: 'Docker', Icon: Docker },
+      { name: 'Kubernetes', Icon: Kubernetes },
+      { name: 'AWS', Icon: Aws },
+      { name: 'Google Cloud Platform', Icon: Gcp },
+      { name: 'Argo CD', Icon: SiArgo },
+      { name: 'Bitbucket Pipelines', Icon: SiBitbucket },
+      { name: 'Datadog', Icon: SiDatadog },
+      { name: 'Grafana', Icon: Grafana },
+      { name: 'Sentry', Icon: Sentry },
+    ],
   },
 ]
