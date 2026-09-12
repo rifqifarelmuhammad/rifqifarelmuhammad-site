@@ -27,7 +27,7 @@ export const SELECTED_PROJECTS: SelectedProjectCardProps[] = [
     imageAlt: 'CirrhoCheck clinical decision-support system preview',
     role: 'Engineering Lead',
     description:
-      'Clinical decision-support system for cirrhosis mortality-risk assessment, deployed at Cipto Mangunkusumo General Hospital (RSCM). I served as Engineering Lead and helped build an automated workflow based on a published clinical scoring formula developed by an RSCM physician.',
+      'Clinical decision-support system for cirrhosis mortality-risk assessment, deployed at Cipto Mangunkusumo General Hospital (RSCM). Helped build an automated workflow based on a published clinical scoring formula developed by an RSCM physician.',
     techStacks: [
       'Django',
       'PostgreSQL',
