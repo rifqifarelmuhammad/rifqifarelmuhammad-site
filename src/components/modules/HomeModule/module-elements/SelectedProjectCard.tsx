@@ -33,7 +33,7 @@ export const SelectedProjectCard = ({
         src={getImage(imageUrl)}
         fill
         sizes="none"
-        className="object-cover"
+        className="object-contain"
       />
     </div>
 
