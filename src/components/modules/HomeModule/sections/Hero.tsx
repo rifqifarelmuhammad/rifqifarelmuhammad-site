@@ -7,7 +7,16 @@ export const Hero = (): JSX.Element => (
     <div className="flex flex-col-reverse md:flex-row items-center justify-center max-w-[1440px] mx-auto gap-6 md:gap-10 lg:gap-16 px-6 md:px-8 lg:px-14 py-10 md:py-14 lg:py-16">
       <div className="w-full md:w-[50%] flex flex-col gap-4 md:gap-5 lg:gap-6">
         <p className="text-sm md:text-base font-semibold uppercase tracking-[0.2em] text-[#FFDE24]">
-          Software Engineer @ Mekari
+          Software Engineer @{' '}
+          <Link
+            href="https://mekari.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Mekari company website, opens in a new tab"
+            className="text-[#5E74E4] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#5E74E4]"
+          >
+            Mekari
+          </Link>
         </p>
 
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white">
