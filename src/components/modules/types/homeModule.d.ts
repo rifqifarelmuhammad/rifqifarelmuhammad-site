@@ -16,3 +16,14 @@ interface SpecialtyCardProps {
   Icon: IconType
   content: string
 }
+
+interface ExperienceCardProps {
+  company: string
+  role: string
+  startLabel: string
+  startDateTime: string
+  endLabel: string
+  // Omitted for the ongoing role, which also marks it as current.
+  endDateTime?: string
+  highlights: string[]
+}
