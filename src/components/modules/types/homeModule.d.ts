@@ -17,15 +17,15 @@ interface SpecialtyCardProps {
   content: string
 }
 
-interface EducationProps {
+interface EducationCardProps {
   institution: string
+  affiliation?: string
   degree: string
   startLabel: string
   startDateTime: string
   endLabel: string
   endDateTime: string
-  gpa: string
-  distinction: string
+  badges: string[]
 }
 
 interface PublicationCardProps {

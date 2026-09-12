@@ -3,6 +3,7 @@ import {
   FaBookOpen,
   FaBriefcase,
   FaCode,
+  FaGraduationCap,
   FaTools,
   FaUser,
 } from 'react-icons/fa'
@@ -34,6 +35,11 @@ export const MENUS: MenuInterface[] = [
     label: 'Publications',
     url: '/#publications',
     Icon: FaBookOpen,
+  },
+  {
+    label: 'Education',
+    url: '/#education',
+    Icon: FaGraduationCap,
   },
   {
     label: 'Tech Stack',

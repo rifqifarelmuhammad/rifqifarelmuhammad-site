@@ -15,7 +15,7 @@ export const NavLink = ({
     <Link
       href={url}
       onClick={onClick}
-      className={`group flex md:flex-col gap-2 md:gap-0 items-center font-medium rounded-full ${
+      className={`group flex md:flex-col gap-2 md:gap-0 items-center font-medium rounded-full md:text-sm lg:text-base ${
         width < 768 &&
         'w-[75%] justify-center py-1 duration-300 transition-all ease-in-out'
       } ${

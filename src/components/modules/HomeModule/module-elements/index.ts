@@ -1,3 +1,4 @@
+export * from './EducationCard'
 export * from './ExperienceCard'
 export * from './LogoAnimation'
 export * from './PublicationCard'

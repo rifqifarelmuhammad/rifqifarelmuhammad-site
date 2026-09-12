@@ -82,7 +82,7 @@ export const Navbar = (): JSX.Element => {
         </Link>
 
         {width >= 768 && (
-          <div className="items-center gap-4 lg:gap-7 hidden md:flex">
+          <div className="items-center gap-3 lg:gap-7 hidden md:flex">
             {MENUS.map(({ label, url, Icon }) => (
               <NavLink
                 key={label}
