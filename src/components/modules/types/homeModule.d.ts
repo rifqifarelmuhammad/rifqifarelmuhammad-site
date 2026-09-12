@@ -17,6 +17,17 @@ interface SpecialtyCardProps {
   content: string
 }
 
+interface EducationProps {
+  institution: string
+  degree: string
+  startLabel: string
+  startDateTime: string
+  endLabel: string
+  endDateTime: string
+  gpa: string
+  distinction: string
+}
+
 interface PublicationCardProps {
   authorRole: string
   title: string

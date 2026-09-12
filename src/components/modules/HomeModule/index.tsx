@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { Layout, PageAnimation } from '@elements'
 import {
   AboutAndSpecialty,
+  Education,
   Hero,
   LanguagesFrameworksTools,
   ProfessionalExperience,
@@ -34,6 +35,7 @@ export const HomeModule = (): JSX.Element => {
         <ProfessionalExperience />
         <SelectedProjects />
         <Publications />
+        <Education />
         <LanguagesFrameworksTools />
       </Layout>
     </PageAnimation>
