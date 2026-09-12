@@ -17,6 +17,19 @@ interface SpecialtyCardProps {
   content: string
 }
 
+interface SelectedProjectCardProps {
+  title: string
+  imageUrl: string
+  imageAlt: string
+  description: string
+  role?: string
+  techStacks: string[]
+  website?: string
+  git?: string
+  documentation?: string
+  isFeatured?: boolean
+}
+
 interface ExperienceCardProps {
   company: string
   role: string
