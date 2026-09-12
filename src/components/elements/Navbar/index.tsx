@@ -33,7 +33,7 @@ export const Navbar = (): JSX.Element => {
         </Link>
 
         {width >= 768 && (
-          <div className="items-center gap-7 hidden md:flex">
+          <div className="items-center gap-4 lg:gap-7 hidden md:flex">
             {MENUS.map(({ label, url, Icon }) => (
               <NavLink
                 key={label}
@@ -76,6 +76,7 @@ export const Navbar = (): JSX.Element => {
                   url={url}
                   currentLocation={pathname}
                   Icon={Icon}
+                  onClick={() => setIsNavbarOpen(false)}
                 />
               ))}
             </div>

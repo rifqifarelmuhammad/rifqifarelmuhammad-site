@@ -8,4 +8,5 @@ interface MenuInterface {
 
 interface NavLinkProps extends MenuInterface {
   currentLocation: string
+  onClick?: () => void
 }
