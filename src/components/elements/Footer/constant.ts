@@ -1,27 +1,17 @@
-import { ContactInterface } from '../types/footer'
+import { ContactLink } from '../types/footer'
 import { GrGithub, GrLinkedin } from 'react-icons/gr'
-import { TfiEmail } from 'react-icons/tfi'
-import { BsMedium } from 'react-icons/bs'
 
-export const CONTACTS: ContactInterface[] = [
+export const EMAIL = 'rifqifarel222@gmail.com'
+
+export const SOCIAL_LINKS: ContactLink[] = [
   {
-    type: 'MAIL',
-    Icon: TfiEmail,
-    url: 'rifqifarel222@gmail.com',
-  },
-  {
-    type: 'GITHUB',
-    Icon: GrGithub,
-    url: 'https://github.com/rifqifarelmuhammad',
-  },
-  {
-    type: 'LINKEDIN',
+    label: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/rifqi-farel-muhammad',
     Icon: GrLinkedin,
-    url: 'https://www.linkedin.com/in/rifqi-farel-muhammad',
   },
   {
-    type: 'MEDIUM',
-    Icon: BsMedium,
-    url: 'https://medium.com/@rifqifarel222',
+    label: 'GitHub',
+    href: 'https://github.com/rifqifarelmuhammad',
+    Icon: GrGithub,
   },
 ]

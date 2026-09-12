@@ -1,9 +1,7 @@
 import { IconType } from 'react-icons'
 
-type ContactType = 'LINKEDIN' | 'MAIL' | 'GITHUB' | 'MEDIUM'
-
-interface ContactInterface {
-  type: ContactType
+interface ContactLink {
+  label: string
+  href: string
   Icon: IconType
-  url: string
 }
