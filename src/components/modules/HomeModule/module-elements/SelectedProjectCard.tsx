@@ -74,43 +74,45 @@ export const SelectedProjectCard = ({
         ))}
       </ul>
 
-      <div className="mt-auto flex flex-wrap items-center gap-3 md:gap-4">
-        {website && (
-          <Link
-            href={website}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${title} live site, opens in a new tab`}
-            className={`rounded-lg px-6 py-2 bg-gradient-to-b from-[#FFDE24] to-[#A68F0F] font-bold text-sm md:text-base ${ACTION_FOCUS}`}
-          >
-            Live Site
-          </Link>
-        )}
+      {(website || git || documentation) && (
+        <div className="mt-auto flex flex-wrap items-center gap-3 md:gap-4">
+          {website && (
+            <Link
+              href={website}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${title} live site, opens in a new tab`}
+              className={`rounded-lg px-6 py-2 bg-gradient-to-b from-[#FFDE24] to-[#A68F0F] font-bold text-sm md:text-base ${ACTION_FOCUS}`}
+            >
+              Live Site
+            </Link>
+          )}
 
-        {git && (
-          <Link
-            href={git}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${title} source code, opens in a new tab`}
-            className={`rounded-lg px-6 py-2 border border-[#FFDE24]/60 font-semibold text-[#FFDE24] text-sm md:text-base hover:bg-[#FFDE24]/10 ${ACTION_FOCUS}`}
-          >
-            Source Code
-          </Link>
-        )}
+          {git && (
+            <Link
+              href={git}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${title} source code, opens in a new tab`}
+              className={`rounded-lg px-6 py-2 border border-[#FFDE24]/60 font-semibold text-[#FFDE24] text-sm md:text-base hover:bg-[#FFDE24]/10 ${ACTION_FOCUS}`}
+            >
+              Source Code
+            </Link>
+          )}
 
-        {documentation && (
-          <Link
-            href={documentation}
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={`${title} documentation, opens in a new tab`}
-            className={`rounded-lg px-1 py-2 font-semibold text-white underline text-sm md:text-base hover:text-[#FFDE24] ${ACTION_FOCUS}`}
-          >
-            Documentation
-          </Link>
-        )}
-      </div>
+          {documentation && (
+            <Link
+              href={documentation}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${title} documentation, opens in a new tab`}
+              className={`rounded-lg px-1 py-2 font-semibold text-white underline text-sm md:text-base hover:text-[#FFDE24] ${ACTION_FOCUS}`}
+            >
+              Documentation
+            </Link>
+          )}
+        </div>
+      )}
     </div>
   </article>
 )

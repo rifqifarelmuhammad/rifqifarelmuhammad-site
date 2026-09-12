@@ -3,11 +3,15 @@ import { SelectedProjectCardProps } from '../../types/homeModule'
 
 // The projects page owns the canonical image and URLs, so reuse them here
 // instead of keeping a second copy that can silently go stale.
-const sourceOf = (title: string) => {
-  const project = PROJECTS.find((candidate) => candidate.title === title)
+const projectOf = (title: string) =>
+  PROJECTS.find((candidate) => candidate.title === title)
+
+const imageOf = (title: string) => projectOf(title)?.imageUrl ?? ''
+
+const linksOf = (title: string) => {
+  const project = projectOf(title)
 
   return {
-    imageUrl: project?.imageUrl ?? '',
     website: project?.website,
     git: project?.git,
     documentation: project?.documentation,
@@ -16,7 +20,9 @@ const sourceOf = (title: string) => {
 
 export const SELECTED_PROJECTS: SelectedProjectCardProps[] = [
   {
-    ...sourceOf('CirrhoCheck'),
+    // CirrhoCheck deliberately exposes no links: it is a hospital system and
+    // its site, repository, and docs are not ours to hand out.
+    imageUrl: imageOf('CirrhoCheck'),
     title: 'CirrhoCheck',
     imageAlt: 'CirrhoCheck clinical decision-support system preview',
     role: 'Engineering Lead',
@@ -32,7 +38,8 @@ export const SELECTED_PROJECTS: SelectedProjectCardProps[] = [
     ],
   },
   {
-    ...sourceOf('Atmos Game'),
+    imageUrl: imageOf('Atmos Game'),
+    ...linksOf('Atmos Game'),
     title: 'Atmos Game',
     imageAlt: 'Atmos Game store platform preview',
     description:
@@ -51,7 +58,8 @@ export const SELECTED_PROJECTS: SelectedProjectCardProps[] = [
     ],
   },
   {
-    ...sourceOf('Warecloud'),
+    imageUrl: imageOf('Warecloud'),
+    ...linksOf('Warecloud'),
     title: 'Warecloud',
     imageAlt: 'Warecloud warehouse and commerce platform preview',
     description:
