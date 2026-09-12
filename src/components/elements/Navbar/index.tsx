@@ -110,14 +110,17 @@ export const Navbar = (): JSX.Element => {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-y-0 w-full bg-[#100E0E] z-50 p-5 flex flex-col gap-6"
+            className="fixed inset-y-0 w-full bg-[#100E0E] z-50 p-5 flex flex-col"
           >
-            <div className="flex justify-end">
-              <button onClick={() => setIsNavbarOpen(false)}>
-                <AiOutlineClose className="text-white w-5 h-5" />
-              </button>
-            </div>
-            <div className="flex flex-col gap-4 items-center">
+            {/* Out of flow so it cannot push the menu off the centre. */}
+            <button
+              className="absolute right-5 top-5"
+              onClick={() => setIsNavbarOpen(false)}
+            >
+              <AiOutlineClose className="text-white w-5 h-5" />
+            </button>
+
+            <div className="flex flex-1 flex-col gap-4 items-center justify-center">
               {MENUS.map(({ label, url, Icon }) => (
                 <NavLink
                   key={label}
