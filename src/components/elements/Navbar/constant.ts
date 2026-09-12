@@ -27,7 +27,7 @@ export const MENUS: MenuInterface[] = [
   },
   {
     label: 'Projects',
-    url: '/projects',
+    url: '/#projects',
     Icon: FaCode,
   },
   {

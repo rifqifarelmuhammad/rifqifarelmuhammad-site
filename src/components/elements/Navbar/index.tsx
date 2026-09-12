@@ -3,17 +3,66 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { MENUS } from './constant'
 import { NavLink } from './NavLink'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/20/solid'
 import { useWindowSize } from 'usehooks-ts'
 import { AnimatePresence, motion } from 'framer-motion'
 import { AiOutlineClose } from 'react-icons/ai'
 
+// In document order, which is what makes the last match the current section.
+const SECTION_IDS = MENUS.filter(({ url }) => url.startsWith('/#')).map(
+  ({ url }) => url.slice(2)
+)
+
+// Matches the scroll-mt on the sections themselves.
+const SCROLL_OFFSET = 96
+
 export const Navbar = (): JSX.Element => {
   const router = useRouter()
   const { pathname } = router
   const [isNavbarOpen, setIsNavbarOpen] = useState(false)
+  const [activeSection, setActiveSection] = useState('')
   const { width } = useWindowSize()
+
+  // Every hash link shares the home pathname, so comparing paths alone would
+  // leave Home highlighted the whole way down the page.
+  useEffect(() => {
+    if (pathname !== '/') {
+      setActiveSection('')
+      return
+    }
+
+    const update = () => {
+      const reached = SECTION_IDS.filter((id) => {
+        const section = document.getElementById(id)
+        if (!section) return false
+
+        // Rounded: a section jumped to lands on a subpixel boundary, and a
+        // bare comparison would credit the section above it.
+        return Math.round(section.getBoundingClientRect().top) <= SCROLL_OFFSET
+      })
+
+      // The last section is the footer, which the page cannot scroll far
+      // enough to bring up to the offset, so claim it once the page bottom is
+      // reached.
+      const atBottom =
+        window.innerHeight + window.scrollY >=
+        document.documentElement.scrollHeight - 2
+
+      setActiveSection(
+        atBottom
+          ? SECTION_IDS[SECTION_IDS.length - 1]
+          : reached[reached.length - 1] ?? ''
+      )
+    }
+
+    update()
+    window.addEventListener('scroll', update, { passive: true })
+
+    return () => window.removeEventListener('scroll', update)
+  }, [pathname])
+
+  const currentLocation = activeSection ? `/#${activeSection}` : pathname
 
   return (
     <nav
@@ -39,7 +88,7 @@ export const Navbar = (): JSX.Element => {
                 key={label}
                 label={label}
                 url={url}
-                currentLocation={pathname}
+                currentLocation={currentLocation}
                 Icon={Icon}
               />
             ))}
@@ -74,7 +123,7 @@ export const Navbar = (): JSX.Element => {
                   key={label}
                   label={label}
                   url={url}
-                  currentLocation={pathname}
+                  currentLocation={currentLocation}
                   Icon={Icon}
                   onClick={() => setIsNavbarOpen(false)}
                 />
