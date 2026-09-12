@@ -1,4 +1,5 @@
 export * from './ExperienceCard'
 export * from './LogoAnimation'
+export * from './PublicationCard'
 export * from './SelectedProjectCard'
 export * from './TechStack'

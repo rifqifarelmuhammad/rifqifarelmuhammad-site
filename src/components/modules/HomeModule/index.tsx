@@ -4,6 +4,7 @@ import {
   Hero,
   LanguagesFrameworksTools,
   ProfessionalExperience,
+  Publications,
   SelectedProjects,
 } from './sections'
 
@@ -14,6 +15,7 @@ export const HomeModule = (): JSX.Element => (
       <AboutAndSpecialty />
       <ProfessionalExperience />
       <SelectedProjects />
+      <Publications />
       <LanguagesFrameworksTools />
     </Layout>
   </PageAnimation>

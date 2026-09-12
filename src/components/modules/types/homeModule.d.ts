@@ -17,6 +17,15 @@ interface SpecialtyCardProps {
   content: string
 }
 
+interface PublicationCardProps {
+  authorRole: string
+  title: string
+  venue: string
+  doi: string
+  url: string
+  isPrimary?: boolean
+}
+
 interface SelectedProjectCardProps {
   title: string
   imageUrl: string
