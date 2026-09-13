@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <NextSeo
-        defaultTitle="Passionate Software Engineer | Rifqi Farel Muhammad"
+        defaultTitle="Rifqi Farel Muhammad | Software Engineer"
         title={pageProps?.title}
         description={pageProps?.description}
         canonical={pageProps?.canonical}

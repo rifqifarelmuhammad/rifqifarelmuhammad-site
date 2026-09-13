@@ -11,17 +11,17 @@ import {
 } from './sections'
 
 export const HomeModule = (): JSX.Element => {
-  // Sections mount only after the intro animation, so arriving with a hash
-  // from another page finds nothing to scroll to. The router's own scroll
-  // fires as they mount but ignores scroll-margin and buries the target under
-  // the sticky navbar, so re-assert the position once that has settled.
+  // Arriving on a hash, the router scrolls the target flush with the top of
+  // the viewport and under the sticky navbar, ignoring its scroll-margin.
+  // In-page clicks are unaffected, so re-assert only this first landing once
+  // the router's own scroll has finished.
   useEffect(() => {
     const hash = window.location.hash.slice(1)
     if (!hash) return
 
     const timer = setTimeout(
       () => document.getElementById(hash)?.scrollIntoView(),
-      800
+      600
     )
 
     return () => clearTimeout(timer)

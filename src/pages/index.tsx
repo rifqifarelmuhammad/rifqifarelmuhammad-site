@@ -1,42 +1,26 @@
-import { HomePageAnimation } from '@elements'
-import { useEffect, useState } from 'react'
 import { HomeModule } from '@modules'
 import { GetStaticProps } from 'next'
 import { getImage } from '@utils'
 
 export default function Home() {
-  const [animation, setAnimation] = useState<boolean>(true)
-
-  useEffect(() => {
-    setTimeout(() => {
-      setAnimation(false)
-    }, 2950)
-  }, [])
-
-  return (
-    <div className="w-full">
-      <div className="align-middle">
-        {animation ? <HomePageAnimation /> : <HomeModule />}
-      </div>
-    </div>
-  )
+  return <HomeModule />
 }
 
 export const getStaticProps: GetStaticProps = () => {
-  const META_TITLE = 'Passionate Software Engineer | Rifqi Farel Muhammad'
+  const META_TITLE = 'Rifqi Farel Muhammad | Software Engineer'
   const META_DESCRIPTION =
-    'Rifqi Farel Muhammad, a CS student at UI, passionate about software engineering. Experienced in building responsive websites and RESTful APIs.'
+    'Software Engineer at Mekari with a backend-leaning full-stack background, building production systems with Go, microservices, and modern web technologies.'
 
   return {
     props: {
-      canonical: 'https://rifqifarelmuhammad.com/',
+      canonical: 'https://rifqifarelmuhammad.vercel.app/',
       title: META_TITLE,
       description: META_DESCRIPTION,
       openGraph: {
         type: 'website',
         title: META_TITLE,
         description: META_DESCRIPTION,
-        url: 'https://rifqifarelmuhammad.com/',
+        url: 'https://rifqifarelmuhammad.vercel.app/',
         images: [
           {
             url: getImage('v1717436943/rfm_z6kius.png'),

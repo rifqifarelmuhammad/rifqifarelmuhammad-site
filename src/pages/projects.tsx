@@ -10,18 +10,18 @@ export default Projects
 export const getStaticProps: GetStaticProps = () => {
   const META_TITLE = 'Software Projects | Rifqi Farel Muhammad'
   const META_DESCRIPTION =
-    "Showcase of Rifqi Farel Muhammad's software engineering projects, featuring web development, RESTful APIs, and microservices."
+    'Explore software engineering projects by Rifqi Farel Muhammad across backend, full-stack, cloud, and systems development.'
 
   return {
     props: {
-      canonical: 'https://rifqifarelmuhammad.com/projects',
+      canonical: 'https://rifqifarelmuhammad.vercel.app/projects',
       title: META_TITLE,
       description: META_DESCRIPTION,
       openGraph: {
         type: 'website',
         title: META_TITLE,
         description: META_DESCRIPTION,
-        url: 'https://rifqifarelmuhammad.com/',
+        url: 'https://rifqifarelmuhammad.vercel.app/projects',
         images: [
           {
             url: getImage('v1717436943/rfm_z6kius.png'),
