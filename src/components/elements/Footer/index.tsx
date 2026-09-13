@@ -30,6 +30,10 @@ export const Footer = (): JSX.Element => {
             )
           )}
         </div>
+
+        <p className="text-white/60 text-center text-sm">
+          &copy; 2026 Rifqi Farel Muhammad
+        </p>
       </div>
     </footer>
   )
