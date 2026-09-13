@@ -21,7 +21,7 @@ export const HomeModule = (): JSX.Element => {
 
     const timer = setTimeout(
       () => document.getElementById(hash)?.scrollIntoView(),
-      600
+      900
     )
 
     return () => clearTimeout(timer)

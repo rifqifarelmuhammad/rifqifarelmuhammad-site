@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { MENUS } from './constant'
 import { NavLink } from './NavLink'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { Bars3Icon } from '@heroicons/react/20/solid'
 import { useWindowSize } from 'usehooks-ts'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -22,6 +22,7 @@ export const Navbar = (): JSX.Element => {
   const { pathname } = router
   const [isNavbarOpen, setIsNavbarOpen] = useState(false)
   const [activeSection, setActiveSection] = useState('')
+  const hasScrolled = useRef(false)
   const { width } = useWindowSize()
 
   // Every hash link shares the home pathname, so comparing paths alone would
@@ -42,25 +43,52 @@ export const Navbar = (): JSX.Element => {
         return Math.round(section.getBoundingClientRect().top) <= SCROLL_OFFSET
       })
 
-      // The last section is the footer, which the page cannot scroll far
-      // enough to bring up to the offset, so claim it once the page bottom is
-      // reached.
+      // At the page bottom the trailing sections can no longer be scrolled up
+      // to the offset, so fall back to whichever of them has climbed past the
+      // middle of the screen. Claiming the last one outright handed the footer
+      // a highlight that belonged to the section being read.
       const atBottom =
         window.innerHeight + window.scrollY >=
         document.documentElement.scrollHeight - 2
 
-      setActiveSection(
-        atBottom
-          ? SECTION_IDS[SECTION_IDS.length - 1]
-          : reached[reached.length - 1] ?? ''
-      )
+      const visible = atBottom
+        ? SECTION_IDS.filter((id) => {
+            const section = document.getElementById(id)
+
+            return (
+              section &&
+              section.getBoundingClientRect().top <= window.innerHeight / 2
+            )
+          })
+        : reached
+
+      setActiveSection(visible[visible.length - 1] ?? '')
+    }
+
+    const onScroll = () => {
+      hasScrolled.current = true
+      update()
     }
 
     update()
-    window.addEventListener('scroll', update, { passive: true })
+    window.addEventListener('scroll', onScroll, { passive: true })
 
-    return () => window.removeEventListener('scroll', update)
+    return () => window.removeEventListener('scroll', onScroll)
   }, [pathname])
+
+  // Keep the address bar on the section being read, so a copied link points at
+  // it. replaceState rather than a router push: no scroll jump, and no history
+  // entry for every section scrolled past. Held back until the reader actually
+  // scrolls, because on a deep link this runs while the page is still at the
+  // top and would strip the very hash that is being scrolled to.
+  useEffect(() => {
+    if (pathname !== '/' || !hasScrolled.current) return
+
+    const hash = activeSection ? `#${activeSection}` : ''
+    if (window.location.hash === hash) return
+
+    window.history.replaceState(null, '', `${window.location.pathname}${hash}`)
+  }, [activeSection, pathname])
 
   const currentLocation = activeSection ? `/#${activeSection}` : pathname
 
