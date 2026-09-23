@@ -15,13 +15,15 @@ const linksOf = (title: string) => {
     website: project?.website,
     git: project?.git,
     documentation: project?.documentation,
+    video: project?.video,
   }
 }
 
 export const SELECTED_PROJECTS: SelectedProjectCardProps[] = [
   {
-    // CirrhoCheck deliberately exposes no links: it is a hospital system and
-    // its site, repository, and docs are not ours to hand out.
+    // CirrhoCheck is a hospital system: its site, repository, and docs are
+    // not ours to hand out, so linksOf only surfaces the demo video.
+    ...linksOf('CirrhoCheck'),
     imageUrl: imageOf('CirrhoCheck'),
     title: 'CirrhoCheck',
     imageAlt: 'CirrhoCheck clinical decision-support system preview',

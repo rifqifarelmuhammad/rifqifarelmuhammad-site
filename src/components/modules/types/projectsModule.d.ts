@@ -10,5 +10,6 @@ export interface ProjectCardProps {
   website?: string
   git?: string
   documentation?: string
+  video?: string
   isPriority?: boolean
 }

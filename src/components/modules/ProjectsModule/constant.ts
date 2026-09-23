@@ -2,8 +2,8 @@ import { ProjectCardProps } from '../types/projectsModule'
 
 export const PROJECTS: ProjectCardProps[] = [
   {
-    // Showcase only: CirrhoCheck runs in a hospital, so it carries no site,
-    // repository or documentation link.
+    // CirrhoCheck runs in a hospital, so it carries no site, repository or
+    // documentation link; a recorded demo stands in for them.
     title: 'CirrhoCheck',
     imageUrl: 'v1717523671/CirrhoCheck_rlgxck.png',
     imageAlt: 'CirrhoCheck clinical decision-support system preview',
@@ -18,6 +18,8 @@ export const PROJECTS: ProjectCardProps[] = [
       'Tailwind CSS',
       'Google Cloud Platform',
     ],
+    video:
+      'https://drive.google.com/file/d/1IZCiCJYInpWY-ZzU_cR9nK7krngVszmf/view',
   },
   {
     title: 'Atmos Game',

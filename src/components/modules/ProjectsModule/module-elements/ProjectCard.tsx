@@ -16,6 +16,7 @@ export const ProjectCard = ({
   website,
   git,
   documentation,
+  video,
   isPriority,
 }: ProjectCardProps): JSX.Element => (
   <article className="flex flex-col h-full bg-gradient-to-b from-[#210A0A] to-[#6B1D1D] rounded-lg shadow-lg overflow-hidden">
@@ -59,7 +60,7 @@ export const ProjectCard = ({
         ))}
       </ul>
 
-      {(website || git || documentation) && (
+      {(website || git || documentation || video) && (
         <div className="mt-auto flex flex-wrap items-center gap-3 md:gap-4">
           {website && (
             <Link
@@ -70,6 +71,18 @@ export const ProjectCard = ({
               className={`rounded-lg px-6 py-2 bg-gradient-to-b from-[#FFDE24] to-[#A68F0F] font-bold text-sm md:text-base ${FOCUS}`}
             >
               Live Site
+            </Link>
+          )}
+
+          {video && (
+            <Link
+              href={video}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`${title} demo video, opens in a new tab`}
+              className={`rounded-lg px-6 py-2 border border-[#FFDE24]/60 font-semibold text-[#FFDE24] text-sm md:text-base hover:bg-[#FFDE24]/10 ${FOCUS}`}
+            >
+              Watch Demo
             </Link>
           )}
 

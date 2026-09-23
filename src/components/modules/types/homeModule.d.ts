@@ -53,6 +53,7 @@ interface SelectedProjectCardProps {
   website?: string
   git?: string
   documentation?: string
+  video?: string
   isFeatured?: boolean
 }
 
