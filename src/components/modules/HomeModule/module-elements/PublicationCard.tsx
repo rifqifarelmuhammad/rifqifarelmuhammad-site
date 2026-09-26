@@ -35,7 +35,7 @@ export const PublicationCard = ({
       target="_blank"
       rel="noopener noreferrer"
       aria-label={`View ${title} publication, opens in a new tab`}
-      className="mt-auto w-fit rounded-lg px-6 py-2 border border-[#FFDE24]/60 font-semibold text-[#FFDE24] text-sm md:text-base hover:bg-[#FFDE24]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FFDE24]"
+      className="mt-auto w-full md:w-fit text-center rounded-lg px-6 py-2 border border-[#FFDE24]/60 font-semibold text-[#FFDE24] text-sm md:text-base hover:bg-[#FFDE24]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FFDE24]"
     >
       View Publication
     </Link>

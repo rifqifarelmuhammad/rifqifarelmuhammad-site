@@ -35,20 +35,20 @@ export const Hero = (): JSX.Element => (
           productivity.
         </p>
 
-        <div className="flex flex-wrap items-center gap-3 md:gap-4 mt-1">
+        <div className="flex flex-col md:flex-row md:flex-wrap md:items-center gap-3 md:gap-4 mt-1">
           <Link
             href="/Rifqi_Farel_Muhammad_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="View Rifqi Farel Muhammad's resume as a PDF, opens in a new tab"
-            className="rounded-lg px-8 py-2.5 bg-gradient-to-b from-[#FFDE24] to-[#A68F0F] font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FFDE24]"
+            className="w-full md:w-auto text-center rounded-lg px-8 py-2.5 bg-gradient-to-b from-[#FFDE24] to-[#A68F0F] font-bold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FFDE24]"
           >
             View Resume
           </Link>
 
           <Link
             href="/projects"
-            className="rounded-lg px-8 py-2.5 border border-[#FFDE24]/60 font-semibold text-[#FFDE24] hover:bg-[#FFDE24]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FFDE24]"
+            className="w-full md:w-auto text-center rounded-lg px-8 py-2.5 border border-[#FFDE24]/60 font-semibold text-[#FFDE24] hover:bg-[#FFDE24]/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#FFDE24]"
           >
             View Projects
           </Link>
